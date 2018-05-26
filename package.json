@@ -1,0 +1,41 @@
+{
+  "name": "b-css",
+  "version": "1.0.0",
+  "description": "small css framework",
+  "main": "dist/b-css.min.css",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "clean": "rimraf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benevolarX/b-css.git"
+  },
+  "keywords": [
+    "css",
+    "css3",
+    "framework",
+    "flex",
+    "grid",
+    "responsive"
+  ],
+  "author": "benevolar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benevolarX/b-css/issues"
+  },
+  "homepage": "https://github.com/benevolarX/b-css#readme",
+  "dependencies": {
+    "autoprefixer": "^8.5.0",
+    "css-loader": "^0.28.11",
+    "cssnano": "^3.10.0",
+    "normalize.css": "^8.0.0",
+    "postcss-loader": "^2.1.5",
+    "rimraf": "^2.6.2",
+    "style-loader": "^0.21.0",
+    "stylelint": "^9.2.1",
+    "webpack": "^4.8.3"
+  }
+}
