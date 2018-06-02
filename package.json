@@ -1,12 +1,13 @@
 {
   "name": "b-css",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "small css framework",
   "main": "dist/b-css.min.css",
   "engines": {
     "node": ">=4"
   },
   "scripts": {
+    "start": "webpack",
     "clean": "rimraf dist"
   },
   "repository": {

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@import url('./color.css');
+
+:root {
+
+    --body-max-width: 1000px;
+    --body-min-width: 400px;
+
+    --round-border-radius: 2em;
+
+    --hr-height: 1px;
+    
+    --bg-color: rgb(133, 180, 211);
+    --txt-color: black;
+    --hover-color: red;
+    --a-color: rgb(82, 79, 19);
+    --a-color-hover: rgb(18, 10, 153);
+
+    --txt-size-default: 1rem;
+    --txt-size-7: 0.8rem;
+    --txt-size-6: 1rem;
+    --txt-size-5: 1.3rem;
+    --txt-size-4: 1.6rem;
+    --txt-size-3: 1.9rem;
+    --txt-size-2: 2.2rem;
+    --txt-size-1: 2.5rem;
+
+    --font-family-defaut: sans-serif, serif;
+    --font-family: Impact, Roboto, Times, Arial, sans-serif, serif;
+
+    --grid-gap: 1rem;
+    --grid-gap-col: var(--grid-gap);
+    --grid-gap-row: var(--grid-gap);
+
+    --grid-auto-row: 1fr;
+    --grid-auto-col: 1fr;
+
+    --grid-item-min-width: 200px;
+    --grid-item-max-width: 1fr;
+
+}

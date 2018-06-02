@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@import url('./variable.css');
+@import url('./base.css');
+
+@import url('./text.css');
+
+@import url('./bloc.css');
+@import url('./flex.css');
+@import url('./grid.css');
+
+@import url('./table.css');
+@import url('./form.css');
+
+@import url('./keyframe.css');
+
+/** border **/
+.circle { border-radius: 50%; }
+.round { border-radius: var(--round-border-radius); }
+
+/** size **/
+.resizable {
+	resize: both;
+    overflow: auto;
+}
+.no-resizable { resize: none; }
+
+.full {
+	width: 100%;
+	height: 100%;
+}
+.full-width { width: 100%; }
+.full-height { height: 100%; }
+
+/** cursor **/
+.cursor-zoom-in { cursor: zoom-in; }
+.cursor-zoom-out { cursor: zoom-out; }
+.cursor-load { cursor: wait; }
+.cursor-clic { cursor: pointer; }
+.cursor-move { cursor: move; }
+.no-cursor { cursor: none; }
+
+/** colors **/ 
+
+.bg-red { background-color: var(--red); }
+.bg-white { background-color: var(--white); }
+.bg-black { background-color: var(--black); }
+
+.hidden, [hidden] { display: none; }
+
+.clearfix:after {
+    clear: both;
+    content: ' ';
+    display: table;
+}
