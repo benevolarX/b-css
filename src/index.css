@@ -55,6 +55,8 @@
     display: table;
 }
 
+.no-selectable { user-select: none; }
+
 .pow1:after { content: ' \00B9'; }
 .pow2:after { content: ' \00B2'; }
 .pow3:after { content: ' \00B3'; }
