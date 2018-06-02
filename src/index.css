@@ -17,6 +17,7 @@
 /** border **/
 .circle { border-radius: 50%; }
 .round { border-radius: var(--round-border-radius); }
+.drop { border-style: medium dashed black; }
 
 /** size **/
 .resizable {
@@ -53,3 +54,18 @@
     content: ' ';
     display: table;
 }
+
+.pow1:after { content: ' \00B9'; }
+.pow2:after { content: ' \00B2'; }
+.pow3:after { content: ' \00B3'; }
+
+.sqrt:before { content: ' \221A'; }
+.sqrt3:before { content: ' \221B'; }
+.sqrt4:before { content: ' \221C'; }
+
+.dice-1 { content: ' \2680'; }
+.dice-2 { content: ' \2681'; }
+.dice-3 { content: ' \2682'; }
+.dice-4 { content: ' \2683'; }
+.dice-5 { content: ' \2684'; }
+.dice-6 { content: ' \2685'; }

@@ -11,4 +11,9 @@
     --white: white;
     --yellow: yellow;
 
+    --info: blue;
+    --error: red;
+    --succes: green;
+    --warning: orange;
+
 }
