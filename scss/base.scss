@@ -21,8 +21,8 @@ body {
 
 article, aside, details, div, figcaption, figure, footer, header, main, menu, nav, section, summary { 
     display: block;
-    background: var(--background-color, $background-color);
-    color: var(--color, $color);
+    background: var(--background-color, white);
+    color: var(--color, black);
 }
 
 canvas, img, svg, video {
