@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.block { display: block; }
+
+.inline { display: inline; }
+.bloc.inline { display: inline-block; }
+.float-left { float: left; }
+.float-right { float: right; }
+.float-none { float: none; }
+.block.center { margin: 0 auto; }
+
+.body {
+    margin: 0 auto;
+    min-width: var(--body-min-width);
+    max-width: var(--body-max-width);
+}
