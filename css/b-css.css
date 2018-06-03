@@ -1,16 +1,8 @@
 :root {
-  --black: black;
-  --blue: blue;
-  --green: green;
-  --grey: grey;
-  --orange: orange;
-  --red: red;
-  --white: white;
-  --yellow: yellow;
-  --info: blue;
-  --error: red;
-  --succes: green;
-  --warning: orange;
+  --info: $info;
+  --error: $error;
+  --succes: $succes;
+  --warning: $warning;
   --background-color: $background-color;
   --color: $color;
   --font-style: $font-style;
@@ -58,27 +50,43 @@
   --border-width: 0px;
   --border-style: none;
   --border-color: black;
-  --border: var(--border-width) var(--border-style) var(--border-color);
+  --border:
+      var(--border-width)
+      var(--border-style)
+      var(--border-color) ;
   --outline-width: medium;
   --outline-style: invert;
   --outline-color: black;
-  --outline: var(--outline-width) var(--outline-style) var(--outline-color);
+  --outline:
+      var(--outline-width)
+      var(--outline-style)
+      var(--outline-color) ;
   --column-rule-width: medium;
   --column-rule-style: none;
   --column-rule-color: black;
-  --column-rule: var(--column-rule-width) var(--column-rule-style) var(--column-rule-color);
+  --column-rule:
+      var(--column-rule-width)
+      var(--column-rule-style)
+      var(--column-rule-color) ;
   --column-width: auto;
   --column-count: auto;
   --columns: var(--column-width) var(--column-count);
   --list-style-type: disc;
   --list-style-position: outside;
   --list-style-image: none;
-  --list-style: var(--list-style-type) var(--list-style-position) var(--list-style-image);
+  --list-style:
+      var(--list-style-type)
+      var(--list-style-position)
+      var(--list-style-image) ;
   --transition-property: all;
   --transition-duration: 0s;
   --transition-timing-function: erase;
   --transition-delay: 0s;
-  --transition: var(--transition-property) var(--transition-duration) var(--transition-timing-function) var(--transition-delay);
+  --transition:
+      var(--transition-property)
+      var(--transition-duration)
+      var(--transition-timing-function)
+      var(--transition-delay) ;
   /** flex **/
   --flex-grow: 0;
   --flex-shrink: 1;
@@ -108,14 +116,14 @@
   /** ??? **/
   --box-shadow: 0 5px 5px rgba(50, 50, 50, 0.2);
   --border-radius: 2em;
-  --hover-color: red;
+  --hover-color: rgb(190, 0, 0);
   /** body **/
   --body-max-width: 1000px;
   --body-min-width: 400px;
   --hr-height: 1px;
   /** a **/
   --a-color: rgb(82, 79, 19);
-  --a-color-hover: rgb(18, 10, 153);
+  --a-color-hover: rgb(31, 63, 151);
   /** text **/
   --txt-size-default: 1rem;
   --txt-size-7: 0.8rem;
@@ -433,26 +441,6 @@ textarea {
 
   .grid .col-12 {
     grid-column: span 12;
-  }
-
-  .grid .col-13 {
-    grid-column: span 13;
-  }
-
-  .grid .col-14 {
-    grid-column: span 14;
-  }
-
-  .grid .col-15 {
-    grid-column: span 15;
-  }
-
-  .grid .col-16 {
-    grid-column: span 16;
-  }
-
-  .grid.max-12 {
-    grid-column: 1/5;
   }
 }
 tr {
