@@ -9,7 +9,7 @@
   "scripts": {
     "start": "sass --trace -t expanded scss/index.scss:css/b-css.css",
     "watch": "sass --trace --sourcemap=none -t expanded --watch scss:css",
-    "build": "npm run build-css && npm run build-min && npm run build-prefix",
+    "build": "npm run build-css && npm run build-min && npm run build-prefix && npm run build-cleancss",
     "build-css": "sass --trace --sourcemap=auto -t expanded scss/index.scss css/b-css.css",
     "build-min": "sass --trace --sourcemap=none -t compressed scss/index.scss css/b-css.min.css",
     "build-prefix": "postcss --use autoprefixer --map false --output css/b-css.css css/b-css.css",
@@ -31,7 +31,9 @@
     "grid",
     "responsive",
     "custom-property",
-    "lightweight"
+    "lightweight",
+    "scss",
+    "sass"
   ],
   "author": "benevolar",
   "license": "MIT",
@@ -44,6 +46,7 @@
   },
   "dependencies": {
     "autoprefixer": "^8.6.0",
+    "clean-css-cli": "^4.1.11",
     "postcss-cli": "^5.0.0"
   }
 }
