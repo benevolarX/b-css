@@ -13,7 +13,16 @@
     .grid.inline { display: inline-grid; }
     .grid.row { grid-auto-flow: column; }
     .grid.col { grid-auto-flow: row; }
-    .grid.responsive { grid-template-columns: repeat(auto-fit, minmax(var(--grid-item-min-width), var(--grid-item-max-width))); }
+    .grid.responsive { 
+        grid-template-columns: 
+            repeat(
+                auto-fit, 
+                minmax(
+                    var(--grid-item-min-width), 
+                    var(--grid-item-max-width)
+                )
+            ); 
+    }
     .grid .col-1 { grid-column: span 1; }
     .grid .col-2 { grid-column: span 2; }
     .grid .col-3 { grid-column: span 3; }
@@ -26,11 +35,4 @@
     .grid .col-10 { grid-column: span 10; }
     .grid .col-11 { grid-column: span 11; }
     .grid .col-12 { grid-column: span 12; }
-    .grid .col-13 { grid-column: span 13; }
-    .grid .col-14 { grid-column: span 14; }
-    .grid .col-15 { grid-column: span 15; }
-    .grid .col-16 { grid-column: span 16; }
-    .grid.max-12 {
-        grid-column: 1/5;
-    }
 }
