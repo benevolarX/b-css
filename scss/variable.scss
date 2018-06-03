@@ -33,6 +33,20 @@ $padding-left: 0;
 
 :root {
 
+    --black: black;
+    --blue: blue;
+    --green: green;
+    --grey: grey;
+    --orange: orange;
+    --red: red;
+    --white: white;
+    --yellow: yellow;
+
+    --info: blue;
+    --error: red;
+    --succes: green;
+    --warning: orange;
+
     --background-color: $background-color;
     --color: $color;
 

@@ -1,8 +1,9 @@
 {
   "name": "b-css",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "small css framework",
-  "main": "./src/index.css",
+  "main": "./scss/index.scss",
+  "style": "bulma/css/b-css.min.css",
   "engines": {
     "node": ">=4"
   },
@@ -42,11 +43,9 @@
   },
   "homepage": "https://github.com/benevolarX/b-css#readme",
   "devDependencies": {
-    "rimraf": "^2.6.2"
-  },
-  "dependencies": {
     "autoprefixer": "^8.6.0",
     "clean-css-cli": "^4.1.11",
-    "postcss-cli": "^5.0.0"
+    "postcss-cli": "^5.0.0",
+    "rimraf": "^2.6.2"
   }
 }
