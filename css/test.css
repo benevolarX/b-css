@@ -1,0 +1,9 @@
+:root {
+  --red: red;
+}
+
+body {
+  background-color: var(--red, blue);
+}
+
+/*# sourceMappingURL=css/test.css.map */

@@ -56,7 +56,7 @@
 }
 
 .no-selectable { user-select: none; }
-
+/*
 .pow1:after { content: ' \00B9'; }
 .pow2:after { content: ' \00B2'; }
 .pow3:after { content: ' \00B3'; }
@@ -71,3 +71,9 @@
 .dice-4 { content: ' \2683'; }
 .dice-5 { content: ' \2684'; }
 .dice-6 { content: ' \2685'; }
+.hyphenate {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+*/
