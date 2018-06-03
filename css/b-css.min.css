@@ -1,1 +1,0 @@
-@supports (--a:0){:root{--red:$red}body{background-color:var(--red,#00f)}}

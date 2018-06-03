@@ -1,15 +1,6 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 
-$red: red;
+@import 'variable', 'base', 'text';
+@import 'bloc', 'flex', 'grid';
+@import 'table', 'form', 'keyframe';
 
-@supports ((--a: 0)) {
-
-    :root {
-        --red: $red;
-    }
-    
-    body {
-        background-color: var(--red, blue);
-    }
-
-}
