@@ -11,9 +11,6 @@
   --error: red;
   --succes: green;
   --warning: orange;
-}
-
-:root {
   --background-color: $background-color;
   --color: $color;
   --font-style: $font-style;
