@@ -1,0 +1,8 @@
+@supports (--a: 0) {
+  :root {
+    --red: $red; }
+
+  body {
+    background-color: var(--red, blue); } }
+
+/*# sourceMappingURL=test.css.map */
