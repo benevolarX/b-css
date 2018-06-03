@@ -14,34 +14,50 @@
 }
 
 :root {
-  --background-color: rgb(175, 200, 215);
-  --color: black;
-  --font-style: normal;
-  --font-variant: normal;
-  --font-weight: normal;
-  --font-size: 100%;
-  --font-family: Verdana, Tahoma, sans-serif, serif;
-  --font: var(--font-style) var(--font-variant) var(--font-weight) var(--font-size) var(--font-family);
-  --font-size-adjust: 100%;
-  --text-decoration-line: none;
-  --text-decoration-color: var(--color, black);
-  --text-decoration-style: solid;
-  --text-decoration: var(--text-decoration-line) var(--text-decoration-color) var(--text-decoration-style);
-  --hyphens: auto;
-  --letter-spacing: normal;
-  --word-spacing: normal;
-  --white-space: normal;
-  --line-height: 1.6;
-  --margin-top: 0;
-  --margin-right: 0;
-  --margin-bottom: 0;
-  --margin-left: 0;
-  --margin: var(--margin-top) var(--margin-right) var(--margin-bottom) var(--margin-left);
-  --padding-top: 0;
-  --padding-right: 0;
-  --padding-bottom: 0;
-  --padding-left: 0;
-  --padding: var(--padding-top) var(--padding-right) var(--padding-bottom) var(--padding-left);
+  --background-color: $background-color;
+  --color: $color;
+  --font-style: $font-style;
+  --font-variant: $font-variant;
+  --font-weight: $font-weight;
+  --font-size: $font-size;
+  --font-family: $font-family;
+  --font:
+      var(--font-style, $font-style)
+      var(--font-variant, $font-variant)
+      var(--font-weight, $font-weight)
+      var(--font-size, $font-size)
+      var(--font-family, $font-family) ;
+  --font-size-adjust: $font-size-adjust;
+  --text-decoration-line: $text-decoration-line;
+  --text-decoration-color: var(--color, text-decoration-color);
+  --text-decoration-style: $text-decoration-style;
+  --text-decoration:
+      var(--text-decoration-line, $text-decoration-line)
+      var(--text-decoration-color, $text-decoration-color)
+      var(--text-decoration-style, $text-decoration-style) ;
+  --hyphens: $hyphens;
+  --letter-spacing: $letter-spacing;
+  --word-spacing: $word-spacing;
+  --white-space: $white-space;
+  --line-height: $line-height;
+  --margin-top: $margin-top;
+  --margin-right: $margin-right;
+  --margin-bottom: $margin-bottom;
+  --margin-left: $margin-left;
+  --margin:
+      var(--margin-top, $margin-top)
+      var(--margin-right, $margin-right)
+      var(--margin-bottom, $margin-bottom)
+      var(--margin-left, $margin-left) ;
+  --padding-top: $padding-top;
+  --padding-right: $padding-right;
+  --padding-bottom: $padding-bottom;
+  --padding-left: $padding-left;
+  --padding:
+      var(--padding-top, $padding-top)
+      var(--padding-right, $padding-right)
+      var(--padding-bottom, $padding-bottom)
+      var(--padding-left, $padding-left) ;
   --border-width: 0px;
   --border-style: none;
   --border-color: black;
