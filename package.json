@@ -9,7 +9,7 @@
   "scripts": {
     "start": "echo 'ok'",
     "build": "npm run build-prod",
-    "watch": "sass --watch ./scss/index.scss:./css/b-css.min.css",
+    "watch": "sass --watch scss:css",
     "build-full": "npm run build-map & npm run build-prod",
     "build-map": "sass --source-map ./scss/index.scss:./css/b-css.css",
     "build-prod": "sass --no-embed-source-map ./scss/index.scss:./css/test.css",
