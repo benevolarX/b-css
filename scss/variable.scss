@@ -4,7 +4,7 @@ $info: rgb(58, 161, 245);
 $error: rgb(155, 10, 10);
 $succes: rgb(33, 165, 33);
 $warning: rgb(255, 217, 0);
-$background-color: rgb(175, 200, 215);
+$background-color: white;
 $color: black;
 
 $font-style: normal;
@@ -38,12 +38,13 @@ $padding-left: 0;
 :root {
 
     --info: $info;
-    --error: $error;
+    --error: red;
     --succes: $succes;
     --warning: $warning;
+    --white: white;
 
-    --background-color: $background-color;
-    --color: $color;
+    --background-color: white;
+    --color: black;
 
     --font-style: $font-style;
     --font-variant: $font-variant;
@@ -194,8 +195,8 @@ $padding-left: 0;
     --hr-height: 1px;
     
     /** a **/
-    --a-color: rgb(82, 79, 19);
-    --a-color-hover: rgb(31, 63, 151);
+    --a-color: rgb(223, 94, 35);
+    --a-color-hover: rgb(160, 157, 10);
 
     /** text **/
     --txt-size-default: 1rem;

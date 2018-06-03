@@ -30,9 +30,10 @@
 .no-cursor { cursor: none; }
 
 /** bg-colors **/ 
-.bg-red { background-color: var(--red); }
-.bg-white { background-color: var(--white); }
-.bg-black { background-color: var(--black); }
+.bg-red { background-color: var(--error, red); }
+.bg-white { background-color: var(--background-color, white); }
+.bg-black { background-color: var(--color, black); }
+.bg-light-blue { background-color: lightblue; }
 
 .hidden, [hidden] { display: none; }
 
@@ -43,6 +44,14 @@
 }
 
 .no-selectable { user-select: none; }
+
+.negative {
+    --neg-bg: var(--color, yellow);
+    --neg-color: var(--background-color, green);
+    color: var(--neg-color, blue);
+    background-color: var(--neg-bg, red);
+}
+
 /*
 .pow1:after { content: ' \00B9'; }
 .pow2:after { content: ' \00B2'; }
