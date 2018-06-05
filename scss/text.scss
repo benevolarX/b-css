@@ -23,3 +23,9 @@
 .txt-uppercase { text-transform: uppercase; }
 .txt-lowercase { text-transform: lowercase; }
 .txt-capitalize { text-transform: capitalize; }
+
+.txt-cut-word {
+    word-wrap: break-word;
+	overflow-wrap: break-word;
+	hyphens: auto;
+}

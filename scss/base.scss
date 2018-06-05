@@ -4,12 +4,12 @@ html { box-sizing: border-box; }
 
 *, *:after, *:before {
     box-sizing: inherit;
+    vertical-align: baseline;
 	padding: var(--padding, 0);
 	margin: var(--margin, 0);
     border: var(--border, 0px none black);
 	font-size: var(--font-size, 100%);
     font: inherit;
-    vertical-align: baseline;
 }
 
 body {
@@ -17,6 +17,7 @@ body {
     color: var(--color, black);
     font-family: var(--font-family, sans-serif), serif;
     font-size-adjust: var(--font-size-adjust, 100%);
+	min-height: 100vh;
 }
 
 article, aside, details, div, figcaption, figure, footer, header, main, menu, nav, section, summary { 
@@ -42,7 +43,7 @@ a, a:link, a:visited {
 }
 
 a:link:hover, a:visited:hover, a:active:hover, a:hover { 
-    color: var(--a-color-hover, var(--hover-color));
+    color: var(--a-color-hover, var(--hover-color, blue));
     text-decoration: underline;
     cursor: pointer;
 }
