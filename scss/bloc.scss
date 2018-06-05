@@ -1,12 +1,13 @@
 @charset "UTF-8";
 
-.block { display: block; }
-
-.inline { display: inline; }
-.bloc.inline { display: inline-block; }
 .float-left { float: left; }
 .float-right { float: right; }
 .float-none { float: none; }
+
+.block { display: block; }
+.inline { display: inline; }
+
+.block.inline { display: inline-block; }
 .block.center { margin: 0 auto; }
 
 .body {
