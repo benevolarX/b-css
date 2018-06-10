@@ -34,6 +34,8 @@
     "responsive",
     "custom-property",
     "lightweight",
+    "itcss",
+    "oocss",
     "scss",
     "sass"
   ],
@@ -44,9 +46,12 @@
   },
   "homepage": "https://github.com/benevolarX/b-css#readme",
   "devDependencies": {
-    "autoprefixer": "^8.6.0",
+    "autoprefixer": "^8.6.2",
     "clean-css-cli": "^4.1.11",
     "postcss-cli": "^5.0.0",
     "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.0"
   }
 }

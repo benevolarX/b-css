@@ -1,0 +1,50 @@
+@charset 'UTF-8';
+
+// border 
+.circle { border-radius: 50%; }
+.round { border-radius: var(--round-border-radius); }
+.drop { border-style: medium dashed black; }
+
+// size
+.no-resizable { resize: none; }
+.resizable {
+	resize: both;
+    overflow: auto;
+}
+.full {
+	width: 100%;
+	height: 100%;
+}
+.full-width { width: 100%; }
+.full-height { height: 100%; }
+
+// cursor 
+.cursor-zoom-in { cursor: zoom-in; }
+.cursor-zoom-out { cursor: zoom-out; }
+.cursor-load { cursor: wait; }
+.cursor-clic { cursor: pointer; }
+.cursor-move { cursor: move; }
+.no-cursor { cursor: none; }
+
+// bg-colors 
+.bg-red { background-color: var(--error, red); }
+.bg-white { background-color: var(--background-color, white); }
+.bg-black { background-color: var(--color, black); }
+.bg-light-blue { background-color: lightblue; }
+
+.hidden, [hidden] { display: none; }
+
+.clearfix:after {
+    clear: both;
+    content: ' ';
+    display: table;
+}
+
+.no-selectable { user-select: none; }
+
+.negative {
+    --neg-bg: var(--color, yellow);
+    --neg-color: var(--background-color, green);
+    color: var(--neg-color, blue);
+    background-color: var(--neg-bg, red);
+}

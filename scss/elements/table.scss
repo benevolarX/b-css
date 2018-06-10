@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+tr { 
+    background-color: white;
+    color: black;
+}
+
+tr:nth-child(even) { 
+    background-color: grey;
+}
+
+tr:hover { 
+    background-color: black;
+    color: white;
+}
+
+/** WORK IN PROGRESS **/ 
