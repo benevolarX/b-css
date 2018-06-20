@@ -1,58 +1,54 @@
-@charset "UTF-8";
+@charset 'UTF-8';
+
+$white: #fff;
+$black: #000;
+$grey: #888;
+$blue: #00f;
+$red: #f00;
+$green: #080;
 
 *, *:after, *:before {
-    vertical-align: baseline;
-	padding: var(--padding, 0);
-	margin: var(--margin, 0);
-    border: var(--border, 0px none black);
-	font-size: var(--font-size, 100%);
-    font: inherit;
+  border: var(--border, 0 none $black);
+  font: inherit;
+  font-size: var(--font-size, 100%);
+  margin: var(--margin, 0);
+  padding: var(--padding, 0);
+  vertical-align: baseline;
 }
 
 body {
-    background: var(--background-color, white);
-    color: var(--color, black);
-    font-family: var(--font-family, sans-serif), serif;
-    font-size-adjust: var(--font-size-adjust, 100%);
-	min-height: 100vh;
+  background: var(--background-color, $white);
+  color: var(--color, $black);
+  font-family: var(--font-family, sans-serif), serif;
+  font-size-adjust: var(--font-size-adjust, 100%);
+  min-height: 100vh;
 }
 
-article, aside, details, div, figcaption, figure, footer, header, main, menu, nav, section, summary { 
-    display: block;
-    background: var(--background-color, white);
-    color: var(--color, black);
+article,
+aside,
+details,
+div,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  background: var(--background-color, $white);
+  color: var(--color, $black);
+  display: block;
 }
 
-canvas, img, svg, video {
-	display: inline-block;
-	width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-style: none;
-}
-
-h1, h2, h3, h4, h5, h6 { 
-    font-weight: normal; 
-}
-
-a, a:link, a:visited {
-    color: var(--a-color, blue);
-    text-decoration: none;
-}
-
-a:link:hover, a:hover {
-    color: var(--a-color-hover, var(--hover-color, blue));
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-ul { 
-    list-style-type: none; 
-}
-
-hr {
-    box-sizing: content-box;
-    height: var(--hr-height, 0);
-    overflow: visible;
-    background-color: var(--color, black);
+canvas,
+img,
+svg,
+video {
+  border-style: none;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
 }

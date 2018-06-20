@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 
 .txt-size-1 { font-size: var(--txt-size-1); }
 .txt-size-2 { font-size: var(--txt-size-2); }
@@ -13,7 +13,7 @@
 .txt-bold { font-weight: bold; }
 .txt-underline { text-decoration: underline; }
 .txt-line-through { text-decoration: line-through; }
-.txt-error-syntax { text-decoration: wavy underline red; }
+.txt-error-syntax { text-decoration: wavy underline $red; }
 
 .txt-justify { text-align: justify; }
 .txt-left { text-align: left; }
@@ -25,7 +25,7 @@
 .txt-capitalize { text-transform: capitalize; }
 
 .txt-cut-word {
-    word-wrap: break-word;
-	overflow-wrap: break-word;
-	hyphens: auto;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }

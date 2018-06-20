@@ -1,9 +1,11 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 
-html { 
-    box-sizing: border-box; 
+html {
+  box-sizing: border-box;
 }
 
-*, *:after, *:before {
-    box-sizing: inherit;
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
 }

@@ -1,18 +1,26 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 
 @supports(display: flex) {
-    .flex {
-        display: flex;
-        flex-flow: raw wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .flex.inline { display: inline-flex; }
-    .flex.row { flex-direction: column; }
-    .flex.row.reverse { flex-direction: column-reverse; }
-    .flex.col { flex-direction: row; }
-    .flex.col.reverse { flex-direction: row-reverse; }
-    .flex.around { justify-content: space-around; }
-    .flex.between { justify-content: space-between; }
-    .flex.baseline { align-items: baseline; }
+
+  .flex {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    &.inline { display: inline-flex; }
+  }
+
+  .row {
+    flex-direction: row;
+    &.reverse { flex-direction: row-reverse; }
+  }
+
+  .col {
+    flex-direction: column;
+    &.reverse { flex-direction: column-reverse; }
+  }
+
+  .no-wrap { flex-wrap: nowrap; }
+
+  .wrap-reverse { flex-wrap: wrap-reverse; }
+
 }
