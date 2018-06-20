@@ -3,3 +3,29 @@
 @import 'bloc';
 @import 'flex';
 @import 'grid';
+
+.jc-start { justify-content: start; }
+.jc-end { justify-content: end; }
+.jc-center { justify-content: center; }
+.jc-stretch { justify-content: stretch; }
+.jc-around { justify-content: space-around; }
+.jc-between { justify-content: space-between; }
+.jc-evenly { justify-content: space-evenly; }
+
+.ac-start { align-content: flex-start; }
+.ac-end { align-content: flex-end; }
+.ac-center { align-content: center; }
+.ac-stretch { align-content: stretch; }
+.ac-between { align-content: space-between; }
+.ac-around { align-content: space-around; }
+
+.ai-start { align-items: flex-start; }
+.ai-end { align-items: flex-end; }
+.ai-center { align-items: center; }
+.ai-stretch { align-items: stretch; }
+.ai-baseline { align-items: baseline; }
+
+.ji-start { justify-items: start; }
+.ji-end { justify-items: end; }
+.ji-center { justify-items: center; }
+.ji-stretch { justify-items: stretch; }

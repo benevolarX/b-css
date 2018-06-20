@@ -3,9 +3,8 @@
 @supports(display: flex) {
 
   .flex {
-    align-items: center;
+    align-items: var(--align-items, center);
     display: flex;
-    justify-content: center;
     &.inline { display: inline-flex; }
   }
 
