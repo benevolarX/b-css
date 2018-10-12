@@ -1,0 +1,22 @@
+@charset 'UTF-8';
+
+$white: #fff;
+$black: #000;
+$grey: #888;
+
+table { width: 100%; }
+
+tr {
+  background-color: $white;
+  color: $black;
+
+  &:nth-child(even) {
+    background-color: $grey;
+  }
+
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
+}
+// WORK IN PROGRESS
