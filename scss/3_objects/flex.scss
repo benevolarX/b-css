@@ -6,8 +6,8 @@
 
     align-items: var(--align-items, center);
     display: flex;
-    flex: var(--flex);
-    flex-flow: var(--flex-flow);
+    flex: var(--flex-grow) var(--flex-shrink) var(--flex-basis);
+    flex-flow: var(--flex-direction) var(--flex-wrap);
 
     &.inline { display: inline-flex; }
 

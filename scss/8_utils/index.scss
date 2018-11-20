@@ -23,10 +23,8 @@
 }
 
 .negative {
-  --neg-color: var(--background-color);
-  --neg-bg: var(--color);
-  color: var(--neg-color);
-  background-color: var(--neg-bg);
+  color: var(--background-color);
+  background-color: var(--color);
 }
 
 .show-class:before {

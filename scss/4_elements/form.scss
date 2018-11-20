@@ -1,8 +1,9 @@
 @charset 'UTF-8';
 
 input {
+  --border-width: 2px;
+  --border-color: var(--info);
   caret-color: var(--caret-color);
-  border-color: var(--info); 
 }
-input:invalid, input:out-of-range { border-color: var(--danger); }
-input:valid { border-color: var(--succes); }
+input:invalid, input:out-of-range { --border-color: var(--danger); }
+input:valid { --border-color: var(--succes); }

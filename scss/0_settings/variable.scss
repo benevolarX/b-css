@@ -12,7 +12,7 @@
     --pink: pink;
     --black: #000; 
     --white: #fff;
-    --grey: #95a5a6;
+    --grey: #ddd;
 
     --primary: var(--purple);
     --secondary: var(--yellow);
@@ -23,107 +23,63 @@
     --succes: var(--green);
     --warning: var(--orange);
     
-    --color: var(--dark, $dark);
-    --background-color: var(--light, $light);
-    --caret-color: var(--dark, $dark);
+    --color: var(--dark);
+    --background-color: var(--light);
+    --caret-color: var(--dark);
     --hover-color: var(--red);
+
+    // font-size
+    --txt-size-7: 1rem;
+    --txt-size-6: 1.2rem;
+    --txt-size-5: 1.4rem;
+    --txt-size-4: 1.6rem;
+    --txt-size-3: 1.8rem;
+    --txt-size-2: 2rem;
+    --txt-size-1: 2.2rem;
 
     // font
     --font-style: normal;
     --font-variant: normal;
     --font-weight: normal;
-    --font-size: 100%;
+    --font-size: var(--txt-size-6);
     --font-family: Verdana, Tahoma, sans-serif, serif;
-    --font: 
-        var(--font-style, normal) 
-        var(--font-variant, normal) 
-        var(--font-weight, normal) 
-        var(--font-size, 100%) 
-        var(--font-family, sans-serif)
-    ;
     --font-size-adjust: 100%;
-
-     // font-size
-     --txt-size: 1.25rem;
-     --txt-size-7: 1rem;
-     --txt-size-6: 1.25rem;
-     --txt-size-5: 1.5rem;
-     --txt-size-4: 1.75rem;
-     --txt-size-3: 2rem;
-     --txt-size-2: 2.25rem;
-     --txt-size-1: 2.5rem;
 
     // text-decoration
     --text-decoration-line: none;
-    --text-decoration-color: var(--color);
     --text-decoration-style: solid;
-    --text-decoration: 
-        var(--text-decoration-line, none) 
-        var(--text-decoration-color) 
-        var(--text-decoration-style, solid)
-    ;
-
+    --text-decoration-color: var(--color);
+    
     // margin
     --margin-top: 0;
     --margin-right: 0;
     --margin-bottom: 0;
     --margin-left: 0;
-    --margin: 
-        var(--margin-top, 0) 
-        var(--margin-right, 0) 
-        var(--margin-bottom, 0) 
-        var(--margin-left, 0)
-    ;
 
     // padding
     --padding-top: 0;
     --padding-right: 0;
     --padding-bottom: 0;
     --padding-left: 0;
-    --padding: 
-        var(--padding-top, 0) 
-        var(--padding-right, 0) 
-        var(--padding-bottom, 0) 
-        var(--padding-left, 0)
-    ;
 
     // border 
     --border-width: 0px;
-    --border-style: none;
+    --border-style: solid;
     --border-color: var(--dark);
-    --border: 
-        var(--border-width, 0px) 
-        var(--border-style, none) 
-        var(--border-color)
-    ;
-    --border-radius: 2em;
+    --border-radius: 0rem;
 
     // list
     --list-style-type: disc;
     --list-style-position: outside;
     --list-style-image: none;
-    --list-style: 
-        var(--list-style-type, disc) 
-        var(--list-style-position, outside) 
-        var(--list-style-image, none)
-    ;
 
     // flex
     --flex-grow: 0;
     --flex-shrink: 1;
     --flex-basis: auto;
-    --flex: 
-        var(--flex-grow, 0) 
-        var(--flex-shrink, 1) 
-        var(--flex-basis, auto)
-    ;
 
     --flex-direction: row;
     --flex-wrap: nowrap;
-    --flex-flow: 
-        var(--flex-direction) 
-        var(--flex-wrap)
-    ;
 
     --justify-content: center;
     --align-content: stretch;
@@ -132,18 +88,12 @@
     // grid
     --grid-column-gap: 1rem;
     --grid-row-gap: 1rem;
-    --grid-gap: 
-        var(--grid-row-gap, 1rem) 
-        var(--grid-column-gap, 1rem)
-    ;
 
     --grid-row-start: auto;
     --grid-row-end: auto;
-    --grid-row: var(--grid-row-start, auto) / var(--grid-row-end, auto);
 
     --grid-column-start: auto;
     --grid-column-end: auto;
-    --grid-column: var(--grid-column-start, auto) / var(--grid-column-end, auto);
 
     --grid-auto-rows: 1fr;
     --grid-auto-columns: 1fr;
@@ -159,47 +109,26 @@
     --transition-duration: 0s;
     --transition-timing-function: erase;
     --transition-delay: 0s;
-    --transition: 
-        var(--transition-property, all) 
-        var(--transition-duration, 0s) 
-        var(--transition-timing-function, erase) 
-        var(--transition-delay, 0s)
-    ;
 
     // column
     --column-rule-width: medium;
     --column-rule-style: none;
     --column-rule-color: var(--dark);
-    --column-rule: 
-        var(--column-rule-width, medium) 
-        var(--column-rule-style, none) 
-        var(--column-rule-color)
-    ;
 
     --column-width: auto;
     --column-count: auto;
-    --columns: var(--column-width, auto) var(--column-count, auto);
 
     // outline
     --outline-width: medium;
     --outline-style: invert;
     --outline-color: var(--dark);
-    --outline: 
-        var(--outline-width, medium) 
-        var(--outline-style, invert) 
-        var(--outline-color)
-    ;
 
     // body
-    --body-max-width: 1000px;
+    --body-max-width: 1200px;
     --body-min-width: 400px;
 
     // hr
     --hr-height: 1px;
-
-    // a
-    --a-color: rgb(40, 6, 95);
-    --a-color-hover: rgb(83, 89, 182);
 
     // other
     --hyphens: auto;
@@ -207,6 +136,6 @@
     --word-spacing: normal;
     --white-space: normal;
     --line-height: 1.6;
-    --box-shadow: 0 5px 5px rgba(50, 50, 50, 0.2);   
+    --box-shadow: 0 5px 5px rgba(50, 50, 50, 0.4);
     
 }
