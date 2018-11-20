@@ -1,14 +1,14 @@
 @charset 'UTF-8';
 
-$white: #fff;
-$black: #000;
-$grey: #888;
-$blue: #00f;
-$red: #f00;
-$green: #080;
+@viewport {
+  width: device-width;
+}
+
+html { box-sizing: border-box; }
 
 *, *:after, *:before {
-  border: var(--border, 0 none $black);
+  box-sizing: inherit;
+  border: var(--border);
   font: inherit;
   font-size: var(--font-size, 100%);
   margin: var(--margin, 0);
@@ -17,11 +17,11 @@ $green: #080;
 }
 
 body {
-  background: var(--background-color, $white);
-  color: var(--color, $black);
-  font-family: var(--font-family, sans-serif), serif;
-  font-size-adjust: var(--font-size-adjust, 100%);
-  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--color);
+  font: var(--font);
+  font-size-adjust: var(--font-size-adjust);
+  min-height: 90vh;
 }
 
 article,
@@ -37,8 +37,8 @@ menu,
 nav,
 section,
 summary {
-  background: var(--background-color, $white);
-  color: var(--color, $black);
+  background: var(--background-color);
+  color: var(--color);
   display: block;
 }
 
@@ -48,7 +48,6 @@ svg,
 video {
   border-style: none;
   display: inline-block;
-  height: auto;
   max-width: 100%;
-  width: 100%;
+  height: auto;
 }

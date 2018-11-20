@@ -1,5 +1,34 @@
 @charset 'UTF-8';
 
+@import 'background';
+@import 'border';
+@import 'cursor';
+@import 'margin';
+@import 'size';
 @import 'text';
-@import 'util';
-// is- 
+
+.hidden, [hidden] { display: none; }
+.invisible { visibility: hidden; }
+
+.clearfix:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.no-selectable { user-select: none; }
+
+.invert {
+  filter: invert(100%);
+}
+
+.negative {
+  --neg-color: var(--background-color);
+  --neg-bg: var(--color);
+  color: var(--neg-color);
+  background-color: var(--neg-bg);
+}
+
+.show-class:before {
+  content: '(' attr(class) ')';
+}

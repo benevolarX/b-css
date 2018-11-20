@@ -3,19 +3,30 @@
 :root {
 
     // colors
-    --primary: var($primary, #777);
-    --secondary: var($secondary, #ee0);
-    --light: var($light, #fff);
-    --dark: var($dark, #000);
-    --info: var($info, #29f);
-    --danger: var($danger, #911);
-    --succes: var($succes, #060);
-    --warning: var($warning, #f95);
-    
+    --red: #be0000;
+    --blue: #5aace2;
+    --green: #178344;
+    --yellow: #f3cf3e;
+    --orange: #dd9b60;
+    --purple: #30106d;
+    --pink: pink;
+    --black: #000; 
+    --white: #fff;
+    --grey: #95a5a6;
 
-    --background-color: var(--light, $light);
+    --primary: var(--purple);
+    --secondary: var(--yellow);
+    --light: var(--white);
+    --dark: var(--black);
+    --info: var(--blue);
+    --danger: var(--red);
+    --succes: var(--green);
+    --warning: var(--orange);
+    
     --color: var(--dark, $dark);
+    --background-color: var(--light, $light);
     --caret-color: var(--dark, $dark);
+    --hover-color: var(--red);
 
     // font
     --font-style: normal;
@@ -33,7 +44,7 @@
     --font-size-adjust: 100%;
 
      // font-size
-     --txt-size-default: 1rem;
+     --txt-size: 1.25rem;
      --txt-size-7: 1rem;
      --txt-size-6: 1.25rem;
      --txt-size-5: 1.5rem;
@@ -44,11 +55,11 @@
 
     // text-decoration
     --text-decoration-line: none;
-    --text-decoration-color: var(--color, $dark);
+    --text-decoration-color: var(--color);
     --text-decoration-style: solid;
     --text-decoration: 
         var(--text-decoration-line, none) 
-        var(--text-decoration-color, $dark) 
+        var(--text-decoration-color) 
         var(--text-decoration-style, solid)
     ;
 
@@ -79,13 +90,12 @@
     // border 
     --border-width: 0px;
     --border-style: none;
-    --border-color: var(--dark, $dark);
+    --border-color: var(--dark);
     --border: 
         var(--border-width, 0px) 
         var(--border-style, none) 
-        var(--border-color, $dark)
+        var(--border-color)
     ;
-
     --border-radius: 2em;
 
     // list
@@ -109,13 +119,13 @@
     ;
 
     --flex-direction: row;
-    --flex-wrap: wrap;
+    --flex-wrap: nowrap;
     --flex-flow: 
-        var(--flex-direction, row) 
-        var(--flex-wrap, wrap)
+        var(--flex-direction) 
+        var(--flex-wrap)
     ;
 
-    --justify-content: flex-start;
+    --justify-content: center;
     --align-content: stretch;
     --align-items: stretch;
 
@@ -141,7 +151,7 @@
 
     --grid-item-min-width: 200px;
     --grid-item-max-width: 1fr;
-    --grid-item-min-height: 200px;
+    --grid-item-min-height: 100px;
     --grid-item-max-height: 2fr;
 
     // transition
@@ -159,11 +169,11 @@
     // column
     --column-rule-width: medium;
     --column-rule-style: none;
-    --column-rule-color: var(--dark, $dark);
+    --column-rule-color: var(--dark);
     --column-rule: 
         var(--column-rule-width, medium) 
         var(--column-rule-style, none) 
-        var(--column-rule-color, $dark)
+        var(--column-rule-color)
     ;
 
     --column-width: auto;
@@ -173,11 +183,11 @@
     // outline
     --outline-width: medium;
     --outline-style: invert;
-    --outline-color: var(--dark, $dark);
+    --outline-color: var(--dark);
     --outline: 
         var(--outline-width, medium) 
         var(--outline-style, invert) 
-        var(--outline-color, $dark)
+        var(--outline-color)
     ;
 
     // body
@@ -198,5 +208,5 @@
     --white-space: normal;
     --line-height: 1.6;
     --box-shadow: 0 5px 5px rgba(50, 50, 50, 0.2);   
-    --hover-color: rgb(190, 0, 0);
+    
 }

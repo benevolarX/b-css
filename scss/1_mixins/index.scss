@@ -1,13 +1,26 @@
 @charset 'UTF-8';
 
-@import 'mixins';
-// 0 css
-// functions
-// mixin 
+@mixin color($bg-color, $color) {
+  background-color: $bg-color;
+  color: $color;
+}
+
+@mixin clearfix {
+
+  &:before, &:after {
+    content: '';
+    display: table;
+  }
+  
+  &:after {
+    clear: both;
+  }
+
+}
+
 // media query 
 // place holder
 // font properties
-// color
 // background properties
 // word-spacing
 // letter-spacing

@@ -1,18 +1,8 @@
 @charset 'UTF-8';
 
-$white: #fff;
-$black: #000;
-$grey: #888;
-$blue: #00f;
-$red: #f00;
-$green: #080;
-
 input {
-  --caret-color: $black;
-  caret-color: var(--caret-color, $black);
-  border-color: var(--info, $blue); 
+  caret-color: var(--caret-color);
+  border-color: var(--info); 
 }
-input:invalid, input:out-of-range { border-color: var(--error, $red); }
-input:valid { border-color: var(--succes, $green); }
-
-/** WORK IN PROGRESS **/
+input:invalid, input:out-of-range { border-color: var(--danger); }
+input:valid { border-color: var(--succes); }

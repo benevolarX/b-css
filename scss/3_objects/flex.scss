@@ -3,23 +3,30 @@
 @supports(display: flex) {
 
   .flex {
+
     align-items: var(--align-items, center);
     display: flex;
+    flex: var(--flex);
+    flex-flow: var(--flex-flow);
+
     &.inline { display: inline-flex; }
+
+    &.row {
+      flex-direction: row;
+      &.reverse { flex-direction: row-reverse; }
+    }
+
+    &.col {
+      flex-direction: column;
+      &.reverse { flex-direction: column-reverse; }
+    }
+
+    &.no-wrap { flex-wrap: nowrap; }
+
+    &.wrap { flex-wrap: wrap; }
+
+    &.wrap-reverse { flex-wrap: wrap-reverse; }
+
   }
-
-  .row {
-    flex-direction: row;
-    &.reverse { flex-direction: row-reverse; }
-  }
-
-  .col {
-    flex-direction: column;
-    &.reverse { flex-direction: column-reverse; }
-  }
-
-  .no-wrap { flex-wrap: nowrap; }
-
-  .wrap-reverse { flex-wrap: wrap-reverse; }
 
 }

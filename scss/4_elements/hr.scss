@@ -1,10 +1,8 @@
 @charset 'UTF-8';
 
-$black: #000;
-
 hr {
-  background-color: var(--color, $black);
+  background-color: var(--color);
   box-sizing: content-box;
-  height: var(--hr-height, 0);
+  height: var(--hr-height);
   overflow: visible;
 }

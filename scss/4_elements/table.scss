@@ -4,19 +4,28 @@ $white: #fff;
 $black: #000;
 $grey: #888;
 
-table { width: 100%; }
+table {
+  --border-spacing-horizontal: 1rem;
+  --border-spacing-vertical: 1rem;
+  --table-layout: fixed;
+  
+  display: inline-table;
+  border-collapse: collapse;
+  width: 100%;
+  border-spacing: var(--border-spacing-horizontal) var(--border-spacing-vertical);
+  table-layout: var(--table-layout);
+}
 
 tr {
-  background-color: $white;
-  color: $black;
+  background-color: var(--light);
+  color: var(--dark);
 
   &:nth-child(even) {
-    background-color: $grey;
+    background-color: var(--grey);
   }
 
   &:hover {
-    background-color: $black;
-    color: $white;
+    background-color: var(--dark);
+    color: var(--light);
   }
 }
-// WORK IN PROGRESS

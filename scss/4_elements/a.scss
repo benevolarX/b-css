@@ -2,11 +2,11 @@
 
 a, :link, :visited {
 
-  color: var(--a-color, $blue);
+  color: var(--a-color);
   text-decoration: none;
 
   &:hover {
-    color: var(--a-color-hover, $blue);
+    color: var(--a-color-hover);
     cursor: pointer;
     text-decoration: underline;
   }
