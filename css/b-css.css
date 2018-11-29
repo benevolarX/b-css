@@ -189,7 +189,7 @@
   --border-style: solid;
   --border-color: var(--dark);
   --border-radius: 0rem;
-  --list-style-type: disc;
+  --list-style-type: none;
   --list-style-position: outside;
   --list-style-image: none;
   --flex-grow: 0;
@@ -610,6 +610,9 @@ video {
   width: 100%;
   height: auto; }
 
+h1 {
+  margin: 0; }
+
 table {
   --border-spacing-horizontal: 1rem;
   --border-spacing-vertical: 1rem;
@@ -906,7 +909,7 @@ hr {
   --border-width: 1px;
   --border-style: solid;
   --border-color: var(--dark);
-  --border-radius: 0.5em;
+  --border-radius: 0.2em;
   cursor: pointer;
   display: inline-block;
   text-align: center;
@@ -1011,6 +1014,12 @@ hr {
 
 .full-height {
   height: 100%; }
+
+.auto-height {
+  height: auto; }
+
+.auto-width {
+  width: auto; }
 
 .txt-size-1 {
   --font-size: var(--txt-size-1); }

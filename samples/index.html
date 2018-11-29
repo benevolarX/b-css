@@ -5,11 +5,121 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Sample</title>
-        <link rel="stylesheet" type="text/css" href="../css/b-css.min.css" />
+        <link rel="stylesheet" type="text/css" href="../css/b-css.css" />
         <link rel="stylesheet" type="text/css" href="./custum.css" />
     </head>
-    <body>
-        <div class="body" >
+    <body class="body bg-blue">
+
+        <header class="">
+            <h2 class="txt-size-2 txt-center">
+                <a class="txt-bold txt-italic txt-uppercase" href="./index.html">b-css</a>
+            </h2>
+        </header>
+
+        <nav>
+            <ul class="flex jc-around">
+                <li>
+                    <a class="" href="">COLORS</a>
+                </li>
+                <li>
+                    <a class="" href="">GRID & FLEX</a>
+                </li>
+                <li>
+                    <a class="" href="">TEXT</a>
+                </li>
+                <li>
+                    <a class="" href="">OTHER</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="grid row no-gap">
+
+            <aside class="col-1 txt-center">
+
+                <h4 class="txt-size-4"> Menu </h4>
+
+                <ul class="">
+                    <li>
+                        <a href="#color" class="block negative">color</a>
+                    </li>
+                    <li>
+                        <a href="#text" class="negative block">text</a>
+                    </li>
+                    <li>
+                        <a href="#" class="negative block">color</a>
+                    </li>
+                    <li>
+                        <a href="#" class="negative block">color</a>
+                    </li>
+                    <li>
+                        <a href="#" class="negative block">color</a>
+                    </li>
+                </ul>
+            </aside>
+            
+            <main class="col-4">
+
+                <h3 class="txt-size-3 txt-center">b-css</h3>
+
+                <hr/>
+                
+                <section>
+
+                    <article id="color">
+                        <h4 class="txt-size-4 txt-center">Colors</h4>
+                        <p class="txt-center">
+                            <span class="bg-red show-class"></span>
+                            <span class="bg-blue show-class"></span>
+                            <span class="bg-green show-class"></span>
+                            <span class="bg-yellow show-class"></span>
+                            <span class="bg-orange show-class"></span>
+                            <span class="bg-purple show-class"></span>
+                            <span class="bg-pink show-class"></span>
+                            <span class="bg-black txt-white show-class"></span>
+                            <span class="bg-white show-class"></span>
+                            <span class="bg-grey show-class"></span>
+                        </p>
+                        <code class="txt-white bg-black block padding-20px">
+                            .bg-red { --background-color: var(--red); } <br/>
+                            .bg-blue { --background-color: var(--blue); } <br/>
+                            .bg-green { --background-color: var(--green); } <br/>
+                            .bg-yellow { --background-color: var(--yellow); } <br/>
+                            .bg-orange { --background-color: var(--orange); } <br/>
+                            .bg-purple { --background-color: var(--purple); } <br/>
+                            .bg-pink { --background-color: var(--pink); } <br/>
+                            .bg-black { --background-color: var(--black); } <br/>
+                            .bg-white { --background-color: var(--white); } <br/>
+                            .bg-grey { --background-color: var(--grey); } <br/>
+                        </code>
+                    </article>
+
+                    <article id="text">
+                        <h4 class="txt-size-4 txt-center">Text</h4>
+                        <div>
+                            <h6 class="txt-size-1 show-class">TITLE H6 size 1 </h6>
+                            <h1 class="txt-size-1 show-class">TITLE H1 size 1 </h1>
+                            <h2 class="txt-size-2 show-class">TITLE H2 size 2 </h2>
+                            <h3 class="txt-size-3 show-class">TITLE H3 size 3</h3>
+                            <h4 class="txt-size-4 show-class">TITLE H4 size 4</h4>
+                            <h5 class="txt-size-5 show-class">TITLE H5 size 5</h5>
+                            <h6 class="txt-size-6 show-class">TITLE H6 size 6</h6>
+                            <h1 class="txt-size-7 show-class">TITLE H1 size 7</h1>
+                            <br/>
+                        </div>
+                    </article>
+
+                    
+
+                </section>
+                
+            </main>
+
         </div>
+        
+        <footer class="bg-blue">
+            <a href="https://github.com/benevolarX/b-css">https://github.com/benevolarX/b-css</a>
+        </footer>
+
     </body>
 </html>
