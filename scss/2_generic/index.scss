@@ -9,6 +9,7 @@
 html { box-sizing: border-box; }
 
 *, *:after, *:before {
+
   box-sizing: inherit;
 
   // color
@@ -50,7 +51,6 @@ html { box-sizing: border-box; }
 }
 
 body {
-
   min-height: 90vh;
 }
 
@@ -76,7 +76,6 @@ svg,
 video {
   border-style: none;
   display: inline-block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
-

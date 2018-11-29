@@ -2,16 +2,17 @@
 
 a, :link, :visited {
 
-  --a-bg-color: rgb(40, 6, 95);
+  --a-background-color: rgb(40, 6, 95);
   --a-color: rgb(83, 89, 182);
 
-  --background-color: var(--a-bg-color);
+  --background-color: var(--a-background-color);
   --color: var(--a-color);
+
   text-decoration: none;
 
   &:hover {
     --background-color: var(--a-color);
-    --color: var(--a-bg-color);
+    --color: var(--a-background-color);
     cursor: pointer;
     text-decoration: underline;
   }

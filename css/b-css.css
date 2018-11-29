@@ -607,8 +607,59 @@ svg,
 video {
   border-style: none;
   display: inline-block;
-  max-width: 100%;
+  width: 100%;
   height: auto; }
+
+table {
+  --border-spacing-horizontal: 1rem;
+  --border-spacing-vertical: 1rem;
+  --table-layout: fixed;
+  display: inline-table;
+  border-collapse: collapse;
+  width: 100%;
+  border-spacing: var(--border-spacing-horizontal) var(--border-spacing-vertical);
+  table-layout: var(--table-layout); }
+
+tr {
+  background-color: var(--light);
+  color: var(--dark); }
+  tr:nth-child(even) {
+    background-color: var(--grey); }
+  tr:hover {
+    background-color: var(--dark);
+    color: var(--light); }
+
+input {
+  --border-width: 2px;
+  --border-color: var(--info);
+  caret-color: var(--caret-color); }
+
+input:invalid, input:out-of-range {
+  --border-color: var(--danger); }
+
+input:valid {
+  --border-color: var(--succes); }
+
+a, :link, :visited {
+  --a-background-color: rgb(40, 6, 95);
+  --a-color: rgb(83, 89, 182);
+  --background-color: var(--a-background-color);
+  --color: var(--a-color);
+  text-decoration: none; }
+  a:hover, :link:hover, :visited:hover {
+    --background-color: var(--a-color);
+    --color: var(--a-background-color);
+    cursor: pointer;
+    text-decoration: underline; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+hr {
+  background-color: var(--black);
+  box-sizing: content-box;
+  height: var(--hr-height);
+  overflow: visible; }
 
 .float-left {
   float: left; }
@@ -846,57 +897,6 @@ video {
 
 .ji-stretch {
   justify-items: stretch; }
-
-table {
-  --border-spacing-horizontal: 1rem;
-  --border-spacing-vertical: 1rem;
-  --table-layout: fixed;
-  display: inline-table;
-  border-collapse: collapse;
-  width: 100%;
-  border-spacing: var(--border-spacing-horizontal) var(--border-spacing-vertical);
-  table-layout: var(--table-layout); }
-
-tr {
-  background-color: var(--light);
-  color: var(--dark); }
-  tr:nth-child(even) {
-    background-color: var(--grey); }
-  tr:hover {
-    background-color: var(--dark);
-    color: var(--light); }
-
-input {
-  --border-width: 2px;
-  --border-color: var(--info);
-  caret-color: var(--caret-color); }
-
-input:invalid, input:out-of-range {
-  --border-color: var(--danger); }
-
-input:valid {
-  --border-color: var(--succes); }
-
-a, :link, :visited {
-  --a-bg-color: rgb(40, 6, 95);
-  --a-color: rgb(83, 89, 182);
-  --background-color: var(--a-bg-color);
-  --color: var(--a-color);
-  text-decoration: none; }
-  a:hover, :link:hover, :visited:hover {
-    --background-color: var(--a-color);
-    --color: var(--a-bg-color);
-    cursor: pointer;
-    text-decoration: underline; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal; }
-
-hr {
-  background-color: var(--black);
-  box-sizing: content-box;
-  height: var(--hr-height);
-  overflow: visible; }
 
 .btn {
   --padding-left: 10px;
