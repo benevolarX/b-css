@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+
+.title-section {
+
+  display: flex;
+  
+  &::before, &::after {
+		margin-right: 1rem;
+		margin-left: 1rem;
+		content: "";
+		display: block;
+		flex: 1 0 0%;
+		border-bottom: 1px solid;
+		align-self: center;
+  }
+  
+}

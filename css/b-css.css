@@ -939,6 +939,17 @@ hr {
 .visible-hover {
   display: var(--display-hover); }
 
+.title-section {
+  display: flex; }
+  .title-section::before, .title-section::after {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    content: "";
+    display: block;
+    flex: 1 0 0%;
+    border-bottom: 1px solid;
+    align-self: center; }
+
 .bg-red {
   --background-color: var(--red); }
 
