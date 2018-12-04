@@ -1,0 +1,16 @@
+@charset 'UTF-8';
+
+.flip {
+    --display-hover: none;
+    --display-no-hover: contents;
+}
+.flip:hover {
+    --display-hover: contents;
+    --display-no-hover: none;
+}
+.hide-hover {
+    display: var(--display-no-hover);
+}
+.visible-hover {
+    display: var(--display-hover);
+}

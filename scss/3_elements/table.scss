@@ -13,15 +13,27 @@ table {
 }
 
 tr {
-  background-color: var(--light);
-  color: var(--dark);
+  --odd-bg-color: var(--ligth);
+  --odd-color: var(--dark);
+
+  --even-bg-color: var(--grey);
+  --even-color: var(--dark);
+
+  --hover-bg-color: var(--dark);
+  --hover-color: var(--light);
 
   &:nth-child(even) {
-    background-color: var(--grey);
+    background-color: var(--even-bg-color);
+    color: var(--even-color);
+  }
+
+  &:nth-child(odd) {
+    background-color: var(--odd-bg-color);
+    color: var(--odd-color);
   }
 
   &:hover {
-    background-color: var(--dark);
-    color: var(--light);
+    background-color: var(--hover-bg-color);
+    color: var(--hover-color);
   }
 }
