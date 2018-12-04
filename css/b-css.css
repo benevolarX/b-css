@@ -950,6 +950,20 @@ hr {
     border-bottom: 1px solid;
     align-self: center; }
 
+.burger-icon {
+  --burger-icon-color: black;
+  padding-left: 1.25em;
+  position: relative; }
+
+.burger-icon:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  bottom: 0.2em;
+  width: 1em;
+  background: linear-gradient(to bottom, var(--burger-icon-color), var(--burger-icon-color) 20%, transparent 20%, transparent 40%, var(--burger-icon-color) 40%, var(--burger-icon-color) 60%, transparent 60%, transparent 80%, var(--burger-icon-color) 80%, var(--burger-icon-color) 100%); }
+
 .bg-red {
   --background-color: var(--red); }
 

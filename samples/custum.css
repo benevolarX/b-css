@@ -5,3 +5,7 @@
     --padding-right: 20px;
     --padding-bottom: 20px;
 }
+
+.burger-icon {
+    --burger-icon-color: rgb(16, 206, 41);
+}
