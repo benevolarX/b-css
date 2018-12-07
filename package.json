@@ -1,6 +1,6 @@
 {
-  "name": "b-css",
-  "version": "0.0.1",
+  "name": "@benevolar/b-css",
+  "version": "0.0.2",
   "description": "small css framework",
   "main": "./scss/index.scss",
   "style": "bulma/css/b-css.min.css",
