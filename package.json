@@ -1,5 +1,5 @@
 {
-  "name": "b-css",
+  "name": "@benevolar/b-css",
   "version": "0.0.2",
   "description": "small css framework",
   "main": "./scss/index.scss",
