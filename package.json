@@ -45,10 +45,10 @@
   },
   "homepage": "https://github.com/benevolarX/b-css#readme",
   "devDependencies": {
-    "autoprefixer": "^8.6.5",
+    "autoprefixer": "^9.4.3",
     "clean-css-cli": "^4.2.1",
     "node-sass": "^4.11.0",
-    "postcss-cli": "^5.0.1",
+    "postcss-cli": "^6.0.1",
     "rimraf": "^2.6.2"
   },
   "dependencies": {
