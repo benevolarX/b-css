@@ -36,7 +36,7 @@
 
   }
 
-  @each $key in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12) {
+  @for $key from 1 through 12 {
     .max-col-#{$key} { grid-template-columns: repeat($key, 1fr); }
     .max-row-#{$key} { grid-template-rows: repeat($key, 1fr); }
     .col-#{$key} { grid-column-end: span $key; }

@@ -1,5 +1,13 @@
 @charset 'UTF-8';
 
+// $small-medium: 768px!default;
+// $medium-large: 1200px!default;
+// $only-small: "only screen and (max-width: #{$small-medium})";
+// $not-small: "only screen and (min-width: #{$small-medium})";
+// $only-medium: "only screen and (min-width: #{$small-medium}) and (max-width: #{$medium-large})";
+// $only-large: "only screen and (min-width: #{$medium-large})";
+// $not-large: "only screen and (max-width: #{$medium-large})";
+
 :root {
 
     // colors

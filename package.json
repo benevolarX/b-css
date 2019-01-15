@@ -52,6 +52,7 @@
     "rimraf": "^2.6.3"
   },
   "dependencies": {
+    "minireset.css": "0.0.3",
     "normalize.css": "^8.0.1"
   }
 }
