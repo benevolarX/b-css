@@ -4,9 +4,21 @@
   box-shadow: -5px 5px 15px 0px $gris;
 }
 
+@mixin size($w, $h: $w) {
+  width: $w;
+  height: $h;
+}
+
 @mixin color($bg-color: #fff, $color: #000) {
   background-color: $bg-color;
   color: $color;
+}
+
+@mixin border-hover($color: #000, $size: 2px, $type: solid) {
+  border: $size $type transparent;
+  &:hover {
+    border: $size $type $color;
+  }
 }
 
 @mixin clearfix {
