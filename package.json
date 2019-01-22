@@ -11,7 +11,7 @@
     "start": "npm run build-css -- --watch",
     "watch": "npm run build-css -- --watch",
     "build": "npm run build-css && npm run build-min && npm run build-prefix && npm run build-cleancss",
-    "build-css": "node-sass --scss --trace --sourcemap=auto -t expanded scss/index.scss css/b-css.css",
+    "build-css": "node-sass --scss --trace --sourcemap=auto -t compact scss/index.scss css/b-css.css",
     "build-min": "node-sass --scss --trace --sourcemap=none -t compressed scss/index.scss css/b-css.min.css",
     "build-prefix": "postcss --use autoprefixer --map false --output css/b-css.css css/b-css.css",
     "build-cleancss": "cleancss -o css/b-css.min.css css/b-css.css",
@@ -45,7 +45,7 @@
   },
   "homepage": "https://github.com/benevolarX/b-css#readme",
   "devDependencies": {
-    "autoprefixer": "^9.4.5",
+    "autoprefixer": "^9.4.6",
     "clean-css-cli": "^4.2.1",
     "node-sass": "^4.11.0",
     "postcss-cli": "^6.1.1",
