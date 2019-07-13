@@ -1,50 +1,38 @@
 @-webkit-keyframes anim-spin {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
+    transform: rotate(0deg); }
   100% {
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg); } }
+    transform: rotate(359deg); } }
 
 @keyframes anim-spin {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
+    transform: rotate(0deg); }
   100% {
-    -webkit-transform: rotate(359deg);
-            transform: rotate(359deg); } }
+    transform: rotate(359deg); } }
 
 @-webkit-keyframes anim-zoom-in {
   from {
-    -webkit-transform: scale(0);
-            transform: scale(0); }
+    transform: scale(0); }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1); } }
+    transform: scale(1); } }
 
 @keyframes anim-zoom-in {
   from {
-    -webkit-transform: scale(0);
-            transform: scale(0); }
+    transform: scale(0); }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1); } }
+    transform: scale(1); } }
 
 @-webkit-keyframes anim-zoom-out {
   from {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
+    transform: scale(1); }
   to {
-    -webkit-transform: scale(0);
-            transform: scale(0); } }
+    transform: scale(0); } }
 
 @keyframes anim-zoom-out {
   from {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
+    transform: scale(1); }
   to {
-    -webkit-transform: scale(0);
-            transform: scale(0); } }
+    transform: scale(0); } }
 
 @-webkit-keyframes anim-fade {
   0% {
@@ -76,67 +64,47 @@
 
 @-webkit-keyframes anim-shake {
   0%, 100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
+    transform: translateX(0); }
   10% {
-    -webkit-transform: translateX(-9px);
-            transform: translateX(-9px); }
+    transform: translateX(-9px); }
   20% {
-    -webkit-transform: translateX(8px);
-            transform: translateX(8px); }
+    transform: translateX(8px); }
   30% {
-    -webkit-transform: translateX(-7px);
-            transform: translateX(-7px); }
+    transform: translateX(-7px); }
   40% {
-    -webkit-transform: translateX(6px);
-            transform: translateX(6px); }
+    transform: translateX(6px); }
   50% {
-    -webkit-transform: translateX(-5px);
-            transform: translateX(-5px); }
+    transform: translateX(-5px); }
   60% {
-    -webkit-transform: translateX(4px);
-            transform: translateX(4px); }
+    transform: translateX(4px); }
   70% {
-    -webkit-transform: translateX(-3px);
-            transform: translateX(-3px); }
+    transform: translateX(-3px); }
   80% {
-    -webkit-transform: translateX(2px);
-            transform: translateX(2px); }
+    transform: translateX(2px); }
   90% {
-    -webkit-transform: translateX(-1px);
-            transform: translateX(-1px); } }
+    transform: translateX(-1px); } }
 
 @keyframes anim-shake {
   0%, 100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
+    transform: translateX(0); }
   10% {
-    -webkit-transform: translateX(-9px);
-            transform: translateX(-9px); }
+    transform: translateX(-9px); }
   20% {
-    -webkit-transform: translateX(8px);
-            transform: translateX(8px); }
+    transform: translateX(8px); }
   30% {
-    -webkit-transform: translateX(-7px);
-            transform: translateX(-7px); }
+    transform: translateX(-7px); }
   40% {
-    -webkit-transform: translateX(6px);
-            transform: translateX(6px); }
+    transform: translateX(6px); }
   50% {
-    -webkit-transform: translateX(-5px);
-            transform: translateX(-5px); }
+    transform: translateX(-5px); }
   60% {
-    -webkit-transform: translateX(4px);
-            transform: translateX(4px); }
+    transform: translateX(4px); }
   70% {
-    -webkit-transform: translateX(-3px);
-            transform: translateX(-3px); }
+    transform: translateX(-3px); }
   80% {
-    -webkit-transform: translateX(2px);
-            transform: translateX(2px); }
+    transform: translateX(2px); }
   90% {
-    -webkit-transform: translateX(-1px);
-            transform: translateX(-1px); } }
+    transform: translateX(-1px); } }
 
 :root {
   --red: #be0000;
