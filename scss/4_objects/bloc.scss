@@ -1,5 +1,6 @@
 @charset 'UTF-8';
 
+
 .float-left { float: left; }
 .float-right { float: right; }
 .float-none { float: none; }
@@ -17,4 +18,10 @@
   margin: 0 auto;
   max-width: var(--body-max-width);
   min-width: var(--body-min-width);
+}
+
+// sm
+@media screen and (max-width: var(--md))
+{
+
 }
