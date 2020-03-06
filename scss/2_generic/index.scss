@@ -46,8 +46,8 @@ html { box-sizing: border-box; }
   word-spacing: var(--word-spacing);
   white-space: var(--white-space);
   line-height: var(--line-height);
+  overflow: var(--overflow, auto);
   vertical-align: baseline;
-  
 }
 
 body {

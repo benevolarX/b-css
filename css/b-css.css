@@ -236,7 +236,8 @@
   --word-spacing: normal;
   --white-space: normal;
   --line-height: 1.6;
-  --box-shadow: 0 5px 5px rgba(50, 50, 50, 0.4); }
+  --box-shadow: 0 5px 5px rgba(50, 50, 50, 0.4);
+  --overflow: auto; }
 
 html {
   line-height: 1.15;
@@ -404,6 +405,7 @@ html {
   word-spacing: var(--word-spacing);
   white-space: var(--white-space);
   line-height: var(--line-height);
+  overflow: var(--overflow, auto);
   vertical-align: baseline; }
 
 body {
