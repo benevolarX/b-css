@@ -1,0 +1,314 @@
+@charset 'UTF-8';
+
+.animation {
+    animation-delay: 0s; 
+    animation-direction: normal; 
+    animation-duration: 0s; 
+    animation-fill-mode: none; 
+    animation-iteration-count: 1; 
+    animation-name: none; 
+    animation-play-state: running; 
+    animation-timing-function: ease; 
+}
+
+.background {
+    background-attachment: scroll; 
+    background-blend-mode: normal; 
+    background-clip: border-box; 
+    background-color: rgba(0, 0, 0, 0); 
+    background-image: none; 
+    background-origin: padding-box; 
+    background-position: 0% 0%; 
+    background-repeat: repeat; 
+    background-size: auto; 
+}
+
+.block {
+    display: block;
+    /**
+    border-block-end
+    border-block-end-color
+    border-block-end-style
+    border-block-end-width
+    border-block-start
+    border-block-start-color
+    border-block-start-style
+    border-block-start-width
+    **/
+}
+
+.border {
+    border-top-color: rgb(0, 0, 0); 
+    border-top-left-radius: 0px; 
+    border-top-right-radius: 0px; 
+    border-top-style: none; 
+    border-top-width: 0px; 
+    border-bottom-color: rgb(0, 0, 0); 
+    border-bottom-left-radius: 0px; 
+    border-bottom-right-radius: 0px; 
+    border-bottom-style: none; 
+    border-bottom-width: 0px; 
+    border-left-color: rgb(0, 0, 0); 
+    border-left-style: none; 
+    border-left-width: 0px; 
+    border-right-color: rgb(0, 0, 0); 
+    border-right-style: none; 
+    border-right-width: 0px; 
+
+    border-image-outset: 0px; 
+    border-image-repeat: stretch; 
+    border-image-slice: 100%; 
+    border-image-source: none; 
+    border-image-width: 1; 
+
+    border-collapse: separate; 
+    border-spacing: 0;
+    border-style: none;
+    border-width: none;
+    border-color: transparent;
+
+    /*
+    border-radius
+    border-start-start-radius
+    border-start-end-radius
+    border-end-start-radius
+    border-end-end-radius
+
+    border-inline-end
+    border-inline-end-color
+    border-inline-end-style
+    border-inline-end-width
+    border-inline-start
+    border-inline-start-color
+    border-inline-start-style
+    border-inline-start-width
+    */
+}
+
+.column {
+    column-count: auto; 
+    column-gap: normal; 
+    column-rule-color: rgb(0, 0, 0); 
+    column-rule-style: none; 
+    column-rule-width: 0px; 
+    column-span: none; 
+    column-width: auto; 
+}
+
+.flex {
+    flex-basis: auto; 
+    flex-grow: 0; 
+    flex-shrink: 1; 
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    justify-content: normal;
+    row-gap: normal; 
+}
+
+.font {
+    font-family: "Times New Roman"; 
+    font-kerning: auto; 
+    font-optical-sizing: auto; 
+    font-size: 16px; 
+    font-stretch: 100%; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-variant-ligatures: normal; 
+    font-variant-caps: normal; 
+    font-variant-numeric: normal; 
+    font-variant-east-asian: normal; 
+    font-weight: 400; 
+}
+
+.grid {
+    grid-auto-columns: auto; 
+    grid-auto-flow: row; 
+    grid-auto-rows: auto; 
+    grid-column-end: auto; 
+    grid-column-start: auto; 
+    grid-template-areas: none; 
+    grid-template-columns: none; 
+    grid-template-rows: none; 
+    grid-row-end: auto; 
+    grid-row-start: auto; 
+    justify-items: normal; 
+    justify-self: auto; 
+}
+
+.height {
+    min-height: 0px;
+    max-height: none;
+    height: auto; 
+}
+
+.list {
+    list-style-image: none; 
+    list-style-position: outside; 
+    list-style-type: disc;
+}
+
+.margin {
+    margin-bottom: 8px; 
+    margin-left: 8px; 
+    margin-right: 8px; 
+    margin-top: 8px; 
+}
+
+.outline {
+    outline-color: rgb(0, 0, 0); 
+    outline-offset: 0px; 
+    outline-style: none; 
+    outline-width: 0px; 
+    cursor: auto; 
+    caret-color: rgb(0, 0, 0); 
+}
+
+.overflow {
+    overflow-anchor: auto; 
+    overflow-wrap: normal; 
+    overflow-x: visible; 
+    overflow-y: visible; 
+}
+
+.padding {
+    padding-bottom: 0px; 
+    padding-left: 0px; 
+    padding-right: 0px; 
+    padding-top: 0px; 
+}
+
+.stroke {
+    stroke: none; 
+    stroke-dasharray: none; 
+    stroke-dashoffset: 0px; 
+    stroke-linecap: butt; 
+    stroke-linejoin: miter; 
+    stroke-miterlimit: 4; 
+    stroke-opacity: 1; 
+    stroke-width: 1px; 
+}
+
+.text {
+    text-align: start; 
+    text-align-last: auto; 
+    text-anchor: start; 
+    text-decoration: none solid rgb(0, 0, 0); 
+    text-decoration-line: none; 
+    text-decoration-style: solid; 
+    text-decoration-color: rgb(0, 0, 0); 
+    text-decoration-skip-ink: auto; 
+    text-underline-position: auto; 
+    text-indent: 0px; 
+    text-rendering: auto; 
+    text-shadow: none; 
+    text-size-adjust: auto; 
+    text-overflow: clip; 
+    text-transform: none; 
+    color: rgb(0, 0, 0); 
+    word-break: normal; 
+    word-spacing: 0px; 
+    white-space: normal; 
+    tab-size: 8; 
+    hyphens: manual; 
+    letter-spacing: normal; 
+    line-break: auto;
+}
+
+.transition {
+    transition-delay: 0s; 
+    transition-duration: 0s; 
+    transition-property: all; 
+    transition-timing-function: ease; 
+}
+
+
+.width {
+    min-width: 0px;
+    max-width: none;
+    width: auto; 
+}
+
+.fragment {
+    break-after: auto; 
+    break-before: auto; 
+    break-inside: auto; 
+    orphans: 2; 
+    widows: 2;
+}
+
+.line {
+    line-height: normal; 
+}
+
+
+.test {
+    bottom: auto; 
+    left: auto;  
+    right: auto; 
+    top: auto; 
+
+
+    box-shadow: none; 
+    box-sizing: content-box; 
+    caption-side: top; 
+    clear: none; 
+    clip: auto; 
+    content: normal; 
+    
+    direction: ltr; 
+    empty-cells: show; 
+    float: none; 
+    image-rendering: auto; 
+    isolation: auto; 
+    mix-blend-mode: normal; 
+    object-fit: fill; 
+    object-position: 50% 50%; 
+    opacity: 1; 
+    pointer-events: auto; 
+    position: static; 
+    resize: none; 
+    scroll-behavior: auto; 
+    table-layout: auto; 
+    touch-action: auto; 
+    unicode-bidi: normal; 
+    visibility: visible; 
+    will-change: auto; 
+    z-index: auto; 
+    zoom: 1;
+
+    backface-visibility: visible; 
+    backdrop-filter: none; 
+    align-content: normal; 
+    align-items: normal; 
+    align-self: auto; 
+    
+    order: 0; 
+    perspective: none; 
+    perspective-origin: 648.5px 0px; 
+    shape-outside: none; shape-image-threshold: 0; 
+    shape-margin: 0px; 
+    transform: none; 
+    transform-origin: 648.5px 0px; 
+    transform-style: flat; 
+    user-select: auto; 
+    clip-path: none; 
+    clip-rule: nonzero; 
+    flood-color: rgb(0, 0, 0); 
+    flood-opacity: 1; 
+    lighting-color: rgb(255, 255, 255); 
+    stop-color: rgb(0, 0, 0); 
+    stop-opacity: 1; 
+    color-interpolation-filters: linearrgb; 
+    fill: rgb(0, 0, 0); 
+    fill-opacity: 1; 
+    fill-rule: nonzero; 
+    marker-end: none; 
+    marker-mid: none; 
+    marker-start: none; 
+    mask-type: luminance; 
+    shape-rendering: auto; 
+    writing-mode: horizontal-tb; 
+    paint-order: normal; 
+    
+    
+}
