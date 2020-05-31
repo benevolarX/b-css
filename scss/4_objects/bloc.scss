@@ -12,7 +12,12 @@
   .inline { display: inline-block; }
 }
 
-.center { margin: 0 auto; }
+.center { 
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .body {
   margin: 0 auto;
