@@ -229,8 +229,8 @@
   --padding-bottom: 0;
   --padding-left: 0;
   --padding: var(--padding-top) var(--padding-right) var(--padding-bottom) var(--padding-left);
-  --border-width: none;
-  --border-style: none;
+  --border-width: 0px;
+  --border-style: solid;
   --border-color: var(--dark);
   --border-radius: 0rem;
   --border-top-color: var(--dark);
@@ -541,9 +541,12 @@ template {
   width: device-width;
 }
 
-html, html > * {
-  color: var(--color);
+html {
   display: var(--display);
+}
+
+*, :after, :before {
+  color: var(--color);
   background-attachment: var(--background-attachment);
   background-blend-mode: var(--background-blend-mode);
   background-clip: var(--background-clip);
@@ -571,13 +574,20 @@ html, html > * {
   border-style: var(--border-style);
   border-color: var(--border-color);
   border-radius: var(--border-radius);
-  --column-rule-width: var(--column-rule-width);
-  --column-rule-style: var(--column-rule-style);
-  --column-rule-color: var(--column-rule-color);
-  --column-gap: var(--column-gap);
-  --column-span: var(--column-span);
-  --column-width: var(--column-width);
-  --column-count: var(--column-count);
+  -moz-column-rule-width: var(--column-rule-width);
+       column-rule-width: var(--column-rule-width);
+  -moz-column-rule-style: var(--column-rule-style);
+       column-rule-style: var(--column-rule-style);
+  -moz-column-rule-color: var(--column-rule-color);
+       column-rule-color: var(--column-rule-color);
+  -moz-column-gap: var(--column-gap);
+       column-gap: var(--column-gap);
+  -moz-column-span: var(--column-span);
+       column-span: var(--column-span);
+  -moz-column-width: var(--column-width);
+       column-width: var(--column-width);
+  -moz-column-count: var(--column-count);
+       column-count: var(--column-count);
   list-style-type: var(--list-style-type);
   list-style-position: var(--list-style-position);
   list-style-image: var(--list-style-image);
@@ -653,7 +663,15 @@ input {
   caret-color: var(--caret-color);
 }
 
-input:invalid, input:out-of-range {
+input:not(:-moz-placeholder-shown) {
+  --border-color: var(--danger);
+}
+
+input:not(:-ms-input-placeholder) {
+  --border-color: var(--danger);
+}
+
+input:not(:placeholder-shown) {
   --border-color: var(--danger);
 }
 

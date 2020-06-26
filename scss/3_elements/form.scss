@@ -5,5 +5,5 @@ input {
   --border-color: var(--info);
   caret-color: var(--caret-color);
 }
-input:invalid, input:out-of-range { --border-color: var(--danger); }
+input:not(:placeholder-shown) { --border-color: var(--danger); }
 input:valid { --border-color: var(--succes); }

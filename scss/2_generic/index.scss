@@ -6,13 +6,15 @@
   width: device-width;
 }
 
-html, html > * {
-  // color
-  color: var(--color);
-
+html {
   // display
   display: var(--display);
+}
 
+*, :after, :before {
+  // color
+  color: var(--color);
+  
   // background
   background-attachment: var(--background-attachment); 
   background-blend-mode: var(--background-blend-mode); 
@@ -23,8 +25,8 @@ html, html > * {
   background-position: var(--background-position); 
   background-repeat: var(--background-repeat); 
   background-size: var(--background-size); 
-
-  // font 
+  
+    // font 
   font-style: var(--font-style);
   font-variant: var(--font-variant);
   font-weight: var(--font-weight);
@@ -48,13 +50,13 @@ html, html > * {
   border-radius: var(--border-radius);
 
   // column
-  --column-rule-width: var(--column-rule-width);
-  --column-rule-style: var(--column-rule-style);
-  --column-rule-color: var(--column-rule-color);
-  --column-gap: var(--column-gap); 
-  --column-span: var(--column-span); 
-  --column-width: var(--column-width);
-  --column-count: var(--column-count);
+  column-rule-width: var(--column-rule-width);
+  column-rule-style: var(--column-rule-style);
+  column-rule-color: var(--column-rule-color);
+  column-gap: var(--column-gap); 
+  column-span: var(--column-span); 
+  column-width: var(--column-width);
+  column-count: var(--column-count);
 
   // list
   list-style-type: var(--list-style-type); 

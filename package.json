@@ -1,11 +1,11 @@
 {
   "name": "@benevolar/b-css",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "small css framework",
   "main": "./scss/index.scss",
   "style": "./css/b-css.min.css",
   "engines": {
-    "node": ">=6"
+    "node": ">=8"
   },
   "scripts": {
     "start": "npm run build-css -- --watch",
@@ -44,7 +44,7 @@
   },
   "homepage": "https://github.com/benevolarX/b-css#readme",
   "devDependencies": {
-    "autoprefixer": "^9.8.0",
+    "autoprefixer": "^9.8.4",
     "clean-css-cli": "^4.3.0",
     "node-sass": "^4.14.1",
     "postcss-cli": "^7.1.1",
