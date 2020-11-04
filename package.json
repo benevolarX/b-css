@@ -3,6 +3,7 @@
   "version": "0.3.0",
   "description": "small css framework",
   "main": "./scss/index.scss",
+  "unpkg": "./css/b-css.css",
   "style": "./css/b-css.min.css",
   "engines": {
     "node": ">=8"

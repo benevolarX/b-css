@@ -1,9 +1,0 @@
-@charset 'UTF-8';
-
-input {
-  --border-width: 2px;
-  --border-color: var(--info);
-  caret-color: var(--caret-color);
-}
-input:not(:placeholder-shown) { --border-color: var(--danger); }
-input:valid { --border-color: var(--succes); }
