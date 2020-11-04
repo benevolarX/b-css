@@ -62,3 +62,4 @@ typings/
 .sass-cache/
 .vscode/
 pnpm-lock.yaml
+old/
