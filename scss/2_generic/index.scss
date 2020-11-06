@@ -1,0 +1,80 @@
+@charset 'UTF-8';
+
+/*! inspired by minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+/*! inspired by modern-css-reset v1.1.1 | MIT License | github.com/hankchizljaw/modern-css-reset */
+/*! inspired by normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/*! inspired by modern-normalize v1.0.0 | MIT License | github.com/sindresorhus/modern-normalize */
+/*! inpired by sanitize.css v12.0.1 | CC0 1.0 Universal | github.com/csstools/sanitize.css*/
+
+@import 'reset';
+
+*, ::after, ::before {
+
+    // display
+    display: var(--display);
+
+    // overflow
+    overflow: var(--overflow, auto);
+
+    // color
+    color: var(--color);
+    caret-color: var(--caret-color);
+
+    // background
+    background-attachment: var(--background-attachment); 
+    background-blend-mode: var(--background-blend-mode); 
+    background-clip: var(--background-clip); 
+    background-color: var(--background-color);
+    background-image: var(--background-image, none);
+    background-origin: var(--background-origin); 
+    background-position: var(--background-position); 
+    background-repeat: var(--background-repeat); 
+    background-size: var(--background-size); 
+
+    // font 
+    font-style: var(--font-style);
+    font-variant: var(--font-variant);
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    font-size-adjust: var(--font-size-adjust);
+    line-height: var(--line-height);
+
+    // text-decoration
+    text-decoration-line: var(--text-decoration-line);
+    text-decoration-style: var(--text-decoration-style);
+    text-decoration-color: var(--text-decoration-color);
+
+    // margin & padding
+    margin: var(--margin);
+    padding: var(--padding);
+
+    // border
+    border: var(--border);
+    border-radius: var(--border-radius);
+
+    // list
+    list-style: var(--list-style);
+
+    /**
+    // grid-column
+    column-gap: var(--column-gap); 
+    column-span: var(--column-span); 
+    **/
+
+    // columnS
+    column-rule: var(--column-rule);
+    columns: var(--columns);
+
+    // autre
+    hyphens: var(--hyphens);
+    letter-spacing: var(--letter-spacing);
+    word-spacing: var(--word-spacing);
+    white-space: var(--white-space);
+
+}
+
+article, aside, details, div, figcaption, figure, footer,
+header, main, menu, nav, section, summary {
+    --display: block;
+}

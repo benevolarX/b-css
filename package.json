@@ -1,6 +1,6 @@
 {
   "name": "@benevolar/b-css",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "small css framework",
   "main": "./scss/index.scss",
   "unpkg": "./css/b-css.css",
@@ -50,10 +50,5 @@
     "node-sass": "^5.0.0",
     "postcss-cli": "^8.2.0",
     "rimraf": "^3.0.2"
-  },
-  "dependencies": {
-    "minireset.css": "0.0.6",
-    "normalize.css": "^8.0.1",
-    "sanitize.css": "^12.0.1"
   }
 }
