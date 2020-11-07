@@ -49,6 +49,8 @@
     "clean-css-cli": "^4.3.0",
     "node-sass": "^5.0.0",
     "postcss-cli": "^8.2.0",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "stylelint": "^13.7.2",
+    "stylelint-config-standard": "^20.0.0"
   }
 }

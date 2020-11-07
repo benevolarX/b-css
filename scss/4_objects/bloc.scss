@@ -1,0 +1,12 @@
+@charset 'UTF-8';
+
+.float-left { float: left; }
+.float-right { float: right; }
+.float-none { float: none; }
+
+.inline { display: inline; }
+
+.block {
+  display: block;
+  &.inline { display: inline-block; }
+}

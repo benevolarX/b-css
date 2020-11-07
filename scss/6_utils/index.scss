@@ -1,1 +1,32 @@
 @charset 'UTF-8';
+
+@import 'background';
+@import 'border';
+@import 'cursor';
+@import 'size';
+@import 'text';
+
+.hidden,
+[hidden] { display: none; }
+.invisible { visibility: hidden; }
+
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.no-selectable { user-select: none; }
+
+.invert {
+  filter: invert(100%);
+}
+
+.negative {
+  color: var(--background-color);
+  background-color: var(--color);
+}
+
+.show-class::before {
+  content: '(' attr(class) ')';
+}

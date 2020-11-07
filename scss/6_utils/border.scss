@@ -1,0 +1,14 @@
+@charset 'UTF-8';
+
+.circle { --border-radius: 50%; }
+
+.round {
+  --round-border-radius: 0.5em;
+  --border-radius: var(--round-border-radius);
+}
+
+.drop {
+  --border-width: 0.4em;
+  --border-style: dashed;
+  --border-color: var(--black);
+}

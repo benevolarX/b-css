@@ -1,0 +1,46 @@
+@charset 'UTF-8';
+
+@supports (display: grid) {
+  .grid {
+    --display: grid;
+
+    grid-auto-columns: var(--grid-auto-columns);
+    grid-auto-rows: var(--grid-auto-rows);
+    grid-auto-flow: var(--grid-auto-flow);
+    grid-gap: var(--grid-row-gap) var(--grid-column-gap);
+    grid-row: var(--grid-row-start) / var(--grid-row-end);
+    grid-column: var(--grid-column-start) / var(--grid-column-end);
+    justify-content: var(--justify-content);
+
+    &.inline { --display: inline-grid; }
+
+    &.row {
+      --grid-auto-flow: column;
+      &.dense { --grid-auto-flow: column dense; }
+    }
+
+    &.col {
+      --grid-auto-flow: row;
+      &.dense { --grid-auto-flow: row dense; }
+    }
+
+    &.responsive-col {
+      --to-repeat: minmax(var(--grid-item-min-width), var(--grid-item-max-width));
+
+      grid-template-columns: repeat(auto-fit, var(--to-repeat));
+    }
+
+    &.responsive-row {
+      grid-template-rows: repeat(auto-fit, minmax(var(--grid-item-min-height), var(--grid-item-max-height)));
+    }
+
+    &.no-gap { grid-gap: 0; }
+  }
+
+  @for $key from 1 through 12 {
+    .max-col-#{$key} { grid-template-columns: repeat($key, 1fr); }
+    .max-row-#{$key} { grid-template-rows: repeat($key, 1fr); }
+    .col-#{$key} { grid-column-end: span $key; }
+    .row-#{$key} { grid-row-end: span $key; }
+  }
+}
