@@ -16,9 +16,6 @@
 ::after,
 ::before {
 
-  // display
-  display: var(--display);
-
   // overflow
   overflow: var(--overflow, auto);
 
@@ -89,5 +86,5 @@ menu,
 nav,
 section,
 summary {
-  --display: block;
+  display: block;
 }

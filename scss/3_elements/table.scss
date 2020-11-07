@@ -4,7 +4,9 @@ table {
   width: 100%;
 
   --table-display: inline-table;
-  --display: var(--table-display);
+
+  display: var(--table-display);
+
   --table-layout: fixed;
 
   table-layout: var(--table-layout);

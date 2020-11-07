@@ -2,8 +2,7 @@
 
 @supports (display: grid) {
   .grid {
-    --display: grid;
-
+    display: grid;
     grid-auto-columns: var(--grid-auto-columns);
     grid-auto-rows: var(--grid-auto-rows);
     grid-auto-flow: var(--grid-auto-flow);
@@ -12,7 +11,7 @@
     grid-column: var(--grid-column-start) / var(--grid-column-end);
     justify-content: var(--justify-content);
 
-    &.inline { --display: inline-grid; }
+    &.inline { display: inline-grid; }
 
     &.row {
       --grid-auto-flow: column;
