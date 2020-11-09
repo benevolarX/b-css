@@ -8,6 +8,7 @@
   "engines": {
     "node": ">=8"
   },
+  "engineStrict": true,
   "scripts": {
     "start": "npm run build-css -- --watch",
     "watch": "npm run build-css -- --watch",
