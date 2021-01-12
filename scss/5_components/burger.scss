@@ -2,10 +2,8 @@
 
 .burger-icon {
   display: inline-block;
-
-  --padding: 0;
-  --margin: 0;
   --burger-icon-color: lightblue;
+  --burger-icon-color-hover: darkblue;
 
   width: clamp(1em, 3em, 2em);
   height: clamp(1em, 3em, 2em);
@@ -26,6 +24,6 @@
   cursor: pointer;
 
   &:hover {
-    --burger-icon-color: darkblue;
+    --burger-icon-color: var(--burger-icon-color-hover);
   }
 }

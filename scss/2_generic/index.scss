@@ -8,7 +8,7 @@
 
 /*! inspired by modern-normalize v1.0.0 | MIT License | github.com/sindresorhus/modern-normalize */
 
-/*! inpired by sanitize.css v12.0.1 | CC0 1.0 Universal | github.com/csstools/sanitize.css*/
+/*! inspired by sanitize.css v12.0.1 | CC0 1.0 Universal | github.com/csstools/sanitize.css*/
 
 @import 'reset';
 
@@ -51,6 +51,7 @@
   // border
   border: var(--border);
   border-radius: var(--border-radius);
+  outline: var(--outline);
 
   // list
   list-style: var(--list-style);

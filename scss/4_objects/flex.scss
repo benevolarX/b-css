@@ -3,9 +3,13 @@
 @supports (display: flex) {
   .flex {
     display: flex;
-    align-items: var(--align-items, center);
-    flex: var(--flex-grow) var(--flex-shrink) var(--flex-basis);
-    flex-flow: var(--flex-direction) var(--flex-wrap);
+
+    flex: var(--flex);
+    flex-flow: var(--flex-flow);
+
+    justify-content: var(--justify-content);
+    align-items: var(--align-items);
+    align-content: var(--align-content);
 
     &.inline { display: inline-flex; }
 

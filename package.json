@@ -46,12 +46,13 @@
   },
   "homepage": "https://github.com/benevolarX/b-css#readme",
   "devDependencies": {
-    "autoprefixer": "^10.0.1",
+    "autoprefixer": "^10.2.1",
     "clean-css-cli": "^4.3.0",
+    "ini": "^2.0.0",
     "node-sass": "^5.0.0",
-    "postcss-cli": "^8.2.0",
+    "postcss-cli": "^8.3.1",
     "rimraf": "^3.0.2",
-    "stylelint": "^13.7.2",
+    "stylelint": "^13.8.0",
     "stylelint-config-standard": "^20.0.0"
   }
 }
