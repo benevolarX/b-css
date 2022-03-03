@@ -63,3 +63,4 @@ typings/
 .vscode/
 pnpm-lock.yaml
 old/
+package-lock.json

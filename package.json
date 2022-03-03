@@ -17,7 +17,7 @@
     "build-cleancss": "cleancss -o css/b-css.min.css css/b-css.css",
     "rebuild": "npm run clean && npm run build",
     "restart": "npm run clean && npm run start",
-    "clean": "rimraf css/* && rimraf .sass-cache/",
+    "clean": "rimraf css/* && rimraf .sass-cache/"
   },
   "repository": {
     "type": "git",
