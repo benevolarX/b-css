@@ -11,14 +11,13 @@
   "engineStrict": true,
   "scripts": {
     "start": "npm run build-css -- --watch",
-    "watch": "npm run build-css -- --watch",
     "build": "npm run build-css && npm run build-prefix && npm run build-cleancss",
     "build-css": "node-sass --scss --output-style expanded --source-map true scss/index.scss css/b-css.css",
     "build-prefix": "postcss --use autoprefixer --map false --output css/b-css.css css/b-css.css",
     "build-cleancss": "cleancss -o css/b-css.min.css css/b-css.css",
     "rebuild": "npm run clean && npm run build",
     "restart": "npm run clean && npm run start",
-    "clean": "rimraf css/* && rimraf .sass-cache/"
+    "clean": "rimraf css/* && rimraf .sass-cache/",
   },
   "repository": {
     "type": "git",
@@ -46,13 +45,10 @@
   },
   "homepage": "https://github.com/benevolarX/b-css#readme",
   "devDependencies": {
-    "autoprefixer": "^10.2.4",
-    "clean-css-cli": "^5.0.1",
-    "ini": "^2.0.0",
-    "node-sass": "^5.0.0",
-    "postcss-cli": "^8.3.1",
-    "rimraf": "^3.0.2",
-    "stylelint": "^13.8.0",
-    "stylelint-config-standard": "^20.0.0"
+    "autoprefixer": "^10.4.2",
+    "clean-css-cli": "^5.5.2",
+    "node-sass": "^7.0.1",
+    "postcss-cli": "^9.1.0",
+    "rimraf": "^3.0.2"
   }
 }
