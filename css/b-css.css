@@ -417,22 +417,6 @@ template,
   border-radius: var(--border-radius);
   outline: var(--outline);
   list-style: var(--list-style);
-  /**
-    // grid-column
-    column-gap: var(--column-gap);
-    column-span: var(--column-span);
-    **/
-  -moz-column-rule: var(--column-rule);
-       column-rule: var(--column-rule);
-  -moz-columns: var(--columns);
-       columns: var(--columns);
-  -webkit-hyphens: var(--hyphens);
-      -ms-hyphens: var(--hyphens);
-          hyphens: var(--hyphens);
-  letter-spacing: var(--letter-spacing);
-  word-spacing: var(--word-spacing);
-  white-space: var(--white-space);
-  cursor: var(--cursor);
 }
 
 article,
@@ -938,7 +922,7 @@ hr {
   margin-left: 1rem;
   content: "";
   display: block;
-  flex: 1 0 0%;
+  flex: 1 1 0%;
   border-bottom: 1px solid;
   align-self: center;
 }
