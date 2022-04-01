@@ -1,6 +1,6 @@
 {
   "name": "@benevolar/b-css",
-  "version": "1.0.0",
+  "version": "0.3.0",
   "description": "small css framework",
   "main": "./scss/index.scss",
   "unpkg": "./css/b-css.css",
@@ -45,8 +45,8 @@
   },
   "homepage": "https://github.com/benevolarX/b-css#readme",
   "devDependencies": {
-    "autoprefixer": "^10.4.2",
-    "clean-css-cli": "^5.5.2",
+    "autoprefixer": "^10.4.4",
+    "clean-css-cli": "^5.6.0",
     "node-sass": "^7.0.1",
     "postcss-cli": "^9.1.0",
     "rimraf": "^3.0.2"

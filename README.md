@@ -254,3 +254,40 @@ body {
 
 // pc landscape : (1.777)
 // 1920 / 1080
+
+// pour les @keyframe
+@media (prefers-reduced-motion: no-preference) {
+}
+
+--------------
+// use syntax
+html {
+  --bg-color: red;
+}
+
+.bg-blue {
+  --bg-color: blue;
+}
+
+.use-bg-color {
+  background-color: var(--bg-color);
+}
+
+-----------------------
+// media query personalise
+@custom-media --media-lg (min-width: 117rem); // 1872px
+@custom-media --media-md (max-width: 78rem); //  1248px
+@custom-media --media-sm (max-width: 39rem); //   624px
+@custom-selector :--h h1, h2, h3, h4, h5, h6;
+@custom-selector :--drawable audio,canvas,embed,iframe,img,object,picture,svg,video;
+
+@media (--viewport-medium) {
+
+  :--drawabble {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+  }
+}
