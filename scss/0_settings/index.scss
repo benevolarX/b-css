@@ -1,4 +1,22 @@
 @charset 'UTF-8';
 
 @import 'variable';
-@import 'theme';
+/*
+@media screen and (min-width: 768px) {
+  html {
+    --font-size-base: var(--md-font-size-base, 18px);
+  }
+}
+
+@media screen and (min-width: 1248px) {
+  html {
+    --font-size-base: var(--lg-font-size-base, 20px);
+  }
+}
+
+@media screen and (min-width: 1872px) {
+  html {
+    --font-size-base: var(--xl-font-size-base, 22px);
+  }
+}
+*/

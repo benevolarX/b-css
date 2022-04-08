@@ -1,14 +1,34 @@
 @charset 'UTF-8';
 
 @import './0_settings/index';
-/*
-@import './1_tools/index';
-@import './2_generic/index';
+/*@import './1_tools/index';*/
+@import './2_generic/index';/*
 @import './3_elements/index';
 @import './4_objects/index';
-@import './5_components/index';
+@import './5_components/index';*/
 @import './6_utils/index';
 
+@media (prefers-color-scheme: dark) {
+
+  img, video {
+    opacity: 0.8;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*
 // width < height
 @media (orientation: portrait) {
 

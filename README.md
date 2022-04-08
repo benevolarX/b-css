@@ -53,7 +53,7 @@ img:not([alt]) {
 
 // ajouter line-height à body car ça s'utilise juste sur p et hr
 body {
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 // utiliser :focus-within pour tout les elements qui peuvent être :focus et leur enfants
@@ -291,3 +291,8 @@ html {
     border-style: none;
   }
 }
+
+
+--font-family: -apple-system, "Segoe UI", Roboto, BlinkMacSystemFont, system-ui, sans-serif
+
+--font-family-monospace: monospace, SFMono-Regular, Consolas, Menlo, Monaco, Tahoma

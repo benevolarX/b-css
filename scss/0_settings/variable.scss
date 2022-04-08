@@ -1,6 +1,6 @@
 @charset 'UTF-8';
 
-:root {
+html {
 
   // colors
   --red: #b00;
@@ -14,11 +14,10 @@
   --white: #fff;
   --grey: #ddd;
 
-  // plus moche, tu meurt
-  --primary: var(--purple);
-  --secondary: var(--yellow);
-  --light: var(--white);
-  --dark: var(--black);
+  --primary: #5998f8;
+  --secondary: #1143a7;
+  --light: #bad6ff;
+  --dark: #042361;
 
   --succes: var(--green);
   --info: var(--blue);
@@ -55,18 +54,28 @@
 
   // font-size ??? // font-base = 16px
 
-  --sm-font-size-base: 12px;
-  --md-font-size-base: 14px;
-  --lg-font-size-base: 16px;
-  --xl-font-size-base: 18px;
+  /*
+  --sm-font-size-base: clamp(10px, calc(2vmax + 1vmin), 16px);
+  --md-font-size-base: clamp(14px, calc(2vmax + 1vmin), 20px);
+  --lg-font-size-base: clamp(18px, calc(2vmax + 1vmin), 24px);
+  --xl-font-size-base: clamp(22px, calc(2vmax + 1vmin), 28px);
+  */
 
-  --font-size-base: var(--lg-font-size-base)
+  /*
+  --sm-font-size-base: calc(10px + 6px * (100vw / 768));
+  --md-font-size-base: calc(14px + 6px * ((100vw - 768px) / 480));
+  --lg-font-size-base: calc(18px + 6px * ((100vw - 1248px) / 624));
+  --xl-font-size-base: calc(22px + 6px * ((100vw - 1872px) / 768));
+  */
 
-  --txt-size-7: 0.9rem; // 
-  --txt-size-6: 1.1rem;
-  --txt-size-5: 1.3rem;
-  --txt-size-4: 1.5rem;
-  --txt-size-3: 1.7rem;
-  --txt-size-2: 2rem;
-  --txt-size-1: 2.3rem;
+  --font-size-base: clamp(15px, calc(1vmin + 1vmax), 30px); //var(--sm-font-size-base, 16px);
+
+  --txt-size-8: 0.8125rem; // 13 px = 0.8rem x 16
+  --txt-size-7: 0.875rem; // 14 px
+  --txt-size-6: 1.1rem; // 18 px
+  --txt-size-5: 1.2rem; // 20 px
+  --txt-size-4: 1.3rem;
+  --txt-size-3: 1.4rem;
+  --txt-size-2: 1.5rem;
+  --txt-size-1: 1.6rem; // 48 px = 
 }
