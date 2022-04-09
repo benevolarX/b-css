@@ -10,11 +10,6 @@ html {
   tab-size: 4;
   font-family: -apple-system, "Segoe UI", Roboto, BlinkMacSystemFont, system-ui, sans-serif;
   cursor: default;
-  font-size: var(--font-size-base, 16);
-  // 720 x 480 = 16
-  // 800 x 360 = 18 => +3.6 => 16+3.6 = 19.6 => 18 ? -1.6
-  // 1280 x 720 = 22
-  // 1920 x 1080 = 26 => 26 + 10.8 - 3.8 = 26 + 7
 }
 
 html:focus-within {
@@ -35,6 +30,7 @@ body {
   min-height: 95vh;
   margin: 0 auto;
   text-rendering: optimizeSpeed;
+  font-size: var(--font-size-base, $font-size-base);
 }
 
 article, aside, details, dialog, div, figcaption, figure, 
@@ -48,15 +44,15 @@ footer, header, hgroup, main, menu, nav, section {
 }
 
 h1 {
-  font-size: var(--txt-size-1, 2.3rem);
+  font-size: var(--fs-1, $fs-1);
   margin: 0.67em 0;
 }
 
-h2 { font-size: var(--txt-size-2, 2rem); }
-h3 { font-size: var(--txt-size-3, 1.7rem); }
-h4 { font-size: var(--txt-size-4, 1.5rem); }
-h5 { font-size: var(--txt-size-5, 1.3rem); }
-h6 { font-size: var(--txt-size-6, 1.1rem); }
+h2 { font-size: var(--fs-2, $fs-2); }
+h3 { font-size: var(--fs-3, $fs-3); }
+h4 { font-size: var(--fs-4, $fs-4); }
+h5 { font-size: var(--fs-5, $fs-5); }
+h6 { font-size: var(--fs-6, $fs-6); }
 
 hr {
   box-sizing: content-box;

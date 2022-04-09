@@ -1,22 +1,28 @@
 @charset 'UTF-8';
 
 @import 'variable';
-/*
-@media screen and (min-width: 768px) {
-  html {
-    --font-size-base: var(--md-font-size-base, 18px);
+
+$md-half: $md / 2;
+$lg-half: $lg / 2;
+$xl-half: $xl / 2;
+
+@media screen and (min-width: $md) and (min-height: $md-half) {
+  :root {
+    --fs-min: var(--md-fs-min, #{$md-fs-min});
+    --fs-max: var(--md-fs-max, #{$md-fs-max});
   }
 }
 
-@media screen and (min-width: 1248px) {
-  html {
-    --font-size-base: var(--lg-font-size-base, 20px);
+@media screen and (min-width: $lg) and (min-height: $lg-half) {
+  :root {
+    --fs-min: var(--lg-fs-min, #{$lg-fs-min});
+    --fs-max: var(--lg-fs-max, #{$lg-fs-max});
   }
 }
 
-@media screen and (min-width: 1872px) {
-  html {
-    --font-size-base: var(--xl-font-size-base, 22px);
+@media screen and (min-width: $xl) and (min-height: $xl-half) {
+  :root {
+    --fs-min: var(--xl-fs-min, #{$xl-fs-min});
+    --fs-max: var(--xl-fs-max, #{$xl-fs-max});
   }
 }
-*/

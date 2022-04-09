@@ -1,81 +1,125 @@
 @charset 'UTF-8';
 
+// colors
+$red: #b00;
+$blue: #5ae;
+$green: #184;
+$yellow: #fc3;
+$orange: #d96;
+$purple: #316;
+$pink: #fbc;
+$black: #000;
+$white: #fff;
+$grey: #ddd;
+
+$primary: #6af;
+$secondary: #14b;
+$light: #bdf;
+$dark: #026;
+
+$sm: 0;
+$md: 768px;
+$lg: 1248px;
+$xl: 1872px;
+
+// font-size
+
+$sm-fs-min: 15px;
+$md-fs-min: 16px;
+$lg-fs-min: 17px;
+$xl-fs-min: 18px;
+
+$sm-fs-max: 17px;
+$md-fs-max: 20px;
+$lg-fs-max: 23px;
+$xl-fs-max: 26px;
+
+$fs-min: 15px;
+$fs-max: 17px;
+
+$font-size-base: 16px;
+
+// changelog : $txt-size-N => $fs-N (like bootstrap)
+$fs-8: 0.8em;
+$fs-7: 0.9em;
+$fs-n: 1em;
+$fs-6: 1.1em;
+$fs-5: 1.2em;
+$fs-4: 1.3em;
+$fs-3: 1.4em;
+$fs-2: 1.5em;
+$fs-1: 1.6em;
+
 html {
 
   // colors
-  --red: #b00;
-  --blue: #5ae;
-  --green: #184;
-  --yellow: #fc3;
-  --orange: #d96;
-  --purple: #316;
-  --pink: #fbc;
-  --black: #000;
-  --white: #fff;
-  --grey: #ddd;
+  --red: #{$red};
+  --blue: #{$blue};
+  --green: #{$green};
+  --yellow: #{$yellow};
+  --orange: #{$orange};
+  --purple: #{$purple};
+  --pink: #{$pink};
+  --black: #{$black};
+  --white: #{$white};
+  --grey: #{$grey};
 
-  --primary: #5998f8;
-  --secondary: #1143a7;
-  --light: #bad6ff;
-  --dark: #042361;
+  --primary: #{$primary};
+  --secondary: #{$secondary};
+  --light: #{$light};
+  --dark: #{$dark};
 
-  --succes: var(--green);
-  --info: var(--blue);
-  --warning: var(--orange);
-  --danger: var(--red);
+  --succes: var(--green, #{$green});
+  --info: var(--blue, #{$blue});
+  --warning: var(--orange, #{$orange});
+  --danger: var(--red, #{$red});
 
-  --color: var(--dark);
-  --caret-color: var(--dark);
+  --color: var(--dark, #{$dark});
+  --caret-color: var(--dark, #{$dark});
   // ???
-  --hover-color: var(--red);
+  --hover-color: var(--red, #{$red});
 
   //background
   --background-attachment: scroll;
   --background-blend-mode: normal;
   --background-clip: border-box;
-  --background-color: var(--light);
+  --background-color: var(--light, #{$light});
   --background-image: none;
   --background-origin: padding-box;
   --background-position: 0% 0%;
   --background-repeat: repeat;
   --background-size: auto;
 
-  // screen ??? 
-  // sm : 780x360 / 720x480 / 720x576
-  // add : 1140 / 1200 / 1296
-  // 2.16666 / 1.5 / 1.25
-  // md : 720p 1280x720 1.77777 = 2000
-  // xl : 1080p 1920x1080  1.7777 = 3000
-  // 1248x768 1.625
-  --sm: 0;
-  --md: 768px;
-  --lg: 1248px;
-  --xl: 1872px;
+  --sm: #{$sm};
+  --md: #{$md};
+  --lg: #{$lg};
+  --xl: #{$xl};
 
-  // font-size ??? // font-base = 16px
+  // font-size
 
-  /*
-  --sm-font-size-base: clamp(10px, calc(2vmax + 1vmin), 16px);
-  --md-font-size-base: clamp(14px, calc(2vmax + 1vmin), 20px);
-  --lg-font-size-base: clamp(18px, calc(2vmax + 1vmin), 24px);
-  --xl-font-size-base: clamp(22px, calc(2vmax + 1vmin), 28px);
-  */
+  --sm-fs-min: #{$sm-fs-min};
+  --md-fs-min: #{$md-fs-min};
+  --lg-fs-min: #{$lg-fs-min};
+  --xl-fs-min: #{$xl-fs-min};
 
-  /*
-  --sm-font-size-base: calc(10px + 6px * (100vw / 768));
-  --md-font-size-base: calc(14px + 6px * ((100vw - 768px) / 480));
-  --lg-font-size-base: calc(18px + 6px * ((100vw - 1248px) / 624));
-  --xl-font-size-base: calc(22px + 6px * ((100vw - 1872px) / 768));
-  */
+  --sm-fs-max: #{$sm-fs-max};
+  --md-fs-max: #{$md-fs-max};
+  --lg-fs-max: #{$lg-fs-max};
+  --xl-fs-max: #{$xl-fs-max};
 
-  --font-size-base: clamp(15px, calc(1vmin + 1vmax), 30px); //var(--sm-font-size-base, 16px);
+  --fs-min: #{$sm-fs-min};
+  --fs-max: #{$sm-fs-max};
 
-  --txt-size-8: 0.8125rem; // 13 px = 0.8rem x 16
-  --txt-size-7: 0.875rem; // 14 px
-  --txt-size-6: 1.1rem; // 18 px
-  --txt-size-5: 1.2rem; // 20 px
-  --txt-size-4: 1.3rem;
-  --txt-size-3: 1.4rem;
-  --txt-size-2: 1.5rem;
-  --txt-size-1: 1.6rem; // 48 px = 
+  --font-size-base: clamp(var(--fs-min, #{$sm-fs-min}), calc(1vmin + 1vmax), var(--fs-max, #{$sm-fs-max}));
+
+  // changelog : --txt-size-N => --fs-N (like bootstrap)
+  --fs-8: #{$fs-8};
+  --fs-7: #{$fs-7};
+  --fs-n: #{$fs-n};
+  --fs-6: #{$fs-6};
+  --fs-5: #{$fs-5};
+  --fs-4: #{$fs-4};
+  --fs-3: #{$fs-3};
+  --fs-2: #{$fs-2};
+  --fs-1: #{$fs-1};
 }

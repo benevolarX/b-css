@@ -9,21 +9,21 @@ html {
   --black: #000;
   --white: #fff;
   --grey: #ddd;
-  --primary: #5998f8;
-  --secondary: #1143a7;
-  --light: #bad6ff;
-  --dark: #042361;
-  --succes: var(--green);
-  --info: var(--blue);
-  --warning: var(--orange);
-  --danger: var(--red);
-  --color: var(--dark);
-  --caret-color: var(--dark);
-  --hover-color: var(--red);
+  --primary: #6af;
+  --secondary: #14b;
+  --light: #bdf;
+  --dark: #026;
+  --succes: var(--green, #184);
+  --info: var(--blue, #5ae);
+  --warning: var(--orange, #d96);
+  --danger: var(--red, #b00);
+  --color: var(--dark, #026);
+  --caret-color: var(--dark, #026);
+  --hover-color: var(--red, #b00);
   --background-attachment: scroll;
   --background-blend-mode: normal;
   --background-clip: border-box;
-  --background-color: var(--light);
+  --background-color: var(--light, #bdf);
   --background-image: none;
   --background-origin: padding-box;
   --background-position: 0% 0%;
@@ -33,48 +33,49 @@ html {
   --md: 768px;
   --lg: 1248px;
   --xl: 1872px;
-  /*
-  --sm-font-size-base: clamp(10px, calc(2vmax + 1vmin), 16px);
-  --md-font-size-base: clamp(14px, calc(2vmax + 1vmin), 20px);
-  --lg-font-size-base: clamp(18px, calc(2vmax + 1vmin), 24px);
-  --xl-font-size-base: clamp(22px, calc(2vmax + 1vmin), 28px);
-  */
-  /*
-  --sm-font-size-base: calc(10px + 6px * (100vw / 768));
-  --md-font-size-base: calc(14px + 6px * ((100vw - 768px) / 480));
-  --lg-font-size-base: calc(18px + 6px * ((100vw - 1248px) / 624));
-  --xl-font-size-base: calc(22px + 6px * ((100vw - 1872px) / 768));
-  */
-  --font-size-base: clamp(15px, calc(1vmin + 1vmax), 30px);
-  --txt-size-8: 0.8125rem;
-  --txt-size-7: 0.875rem;
-  --txt-size-6: 1.1rem;
-  --txt-size-5: 1.2rem;
-  --txt-size-4: 1.3rem;
-  --txt-size-3: 1.4rem;
-  --txt-size-2: 1.5rem;
-  --txt-size-1: 1.6rem;
+  --sm-fs-min: 15px;
+  --md-fs-min: 16px;
+  --lg-fs-min: 17px;
+  --xl-fs-min: 18px;
+  --sm-fs-max: 17px;
+  --md-fs-max: 20px;
+  --lg-fs-max: 23px;
+  --xl-fs-max: 26px;
+  --fs-min: 15px;
+  --fs-max: 17px;
+  --font-size-base: clamp(var(--fs-min, 15px), calc(1vmin + 1vmax), var(--fs-max, 17px));
+  --fs-8: 0.8em;
+  --fs-7: 0.9em;
+  --fs-n: 1em;
+  --fs-6: 1.1em;
+  --fs-5: 1.2em;
+  --fs-4: 1.3em;
+  --fs-3: 1.4em;
+  --fs-2: 1.5em;
+  --fs-1: 1.6em;
 }
 
-/*
-@media screen and (min-width: 768px) {
-  html {
-    --font-size-base: var(--md-font-size-base, 18px);
+@media screen and (min-width: 768px) and (min-height: 384px) {
+  :root {
+    --fs-min: var(--md-fs-min, 16px);
+    --fs-max: var(--md-fs-max, 20px);
   }
 }
 
-@media screen and (min-width: 1248px) {
-  html {
-    --font-size-base: var(--lg-font-size-base, 20px);
+@media screen and (min-width: 1248px) and (min-height: 624px) {
+  :root {
+    --fs-min: var(--lg-fs-min, 17px);
+    --fs-max: var(--lg-fs-max, 23px);
   }
 }
 
-@media screen and (min-width: 1872px) {
-  html {
-    --font-size-base: var(--xl-font-size-base, 22px);
+@media screen and (min-width: 1872px) and (min-height: 936px) {
+  :root {
+    --fs-min: var(--xl-fs-min, 18px);
+    --fs-max: var(--xl-fs-max, 26px);
   }
 }
-*/
+
 /*@import './1_tools/index';*/
 /*! inspired by minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 /*! inspired by modern-css-reset v1.1.1 | MIT License | github.com/hankchizljaw/modern-css-reset */
@@ -96,7 +97,6 @@ html {
        tab-size: 4;
   font-family: -apple-system, "Segoe UI", Roboto, BlinkMacSystemFont, system-ui, sans-serif;
   cursor: default;
-  font-size: var(--font-size-base, 16);
 }
 
 html:focus-within {
@@ -117,6 +117,7 @@ body {
   min-height: 95vh;
   margin: 0 auto;
   text-rendering: optimizeSpeed;
+  font-size: var(--font-size-base, 16px);
 }
 
 article, aside, details, dialog, div, figcaption, figure,
@@ -130,28 +131,28 @@ footer, header, hgroup, main, menu, nav, section {
 }
 
 h1 {
-  font-size: var(--txt-size-1, 2.3rem);
+  font-size: var(--fs-1, 1.6em);
   margin: 0.67em 0;
 }
 
 h2 {
-  font-size: var(--txt-size-2, 2rem);
+  font-size: var(--fs-2, 1.5em);
 }
 
 h3 {
-  font-size: var(--txt-size-3, 1.7rem);
+  font-size: var(--fs-3, 1.4em);
 }
 
 h4 {
-  font-size: var(--txt-size-4, 1.5rem);
+  font-size: var(--fs-4, 1.3em);
 }
 
 h5 {
-  font-size: var(--txt-size-5, 1.3rem);
+  font-size: var(--fs-5, 1.2em);
 }
 
 h6 {
-  font-size: var(--txt-size-6, 1.1rem);
+  font-size: var(--fs-6, 1.1em);
 }
 
 hr {
