@@ -1,0 +1,32 @@
+@charset 'UTF-8';
+
+@supports (display: flex) {
+  @media screen and (min-width: $xl) and (min-height: $xl-half) {
+    .xl-flex {
+      display: flex;
+
+      flex: var(--flex);
+      flex-flow: var(--flex-flow);
+
+      justify-content: var(--justify-content);
+      align-items: var(--align-items);
+      align-content: var(--align-content);
+
+      &.xl-inline { display: inline-flex; }
+
+      &.xl-row { flex-direction: row; }
+      
+      &.xl-row-reverse { flex-direction: row-reverse; }
+
+      &.xl-col { flex-direction: column; }
+
+      &.xl-col-reverse { flex-direction: column-reverse; }
+
+      &.xl-nowrap { flex-wrap: nowrap; }
+
+      &.xl-wrap { flex-wrap: wrap; }
+
+      &.xl-wrap-reverse { flex-wrap: wrap-reverse; }
+    }
+  }
+}

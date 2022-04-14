@@ -1,0 +1,32 @@
+@charset 'UTF-8';
+
+@supports (display: flex) {
+  @media screen and (min-width: $lg) and (min-height: $lg-half) {
+    .lg-flex {
+      display: flex;
+
+      flex: var(--flex);
+      flex-flow: var(--flex-flow);
+
+      justify-content: var(--justify-content);
+      align-items: var(--align-items);
+      align-content: var(--align-content);
+
+      &.lg-inline { display: inline-flex; }
+
+      &.lg-row { flex-direction: row; }
+      
+      &.lg-row-reverse { flex-direction: row-reverse; }
+
+      &.lg-col { flex-direction: column; }
+
+      &.lg-col-reverse { flex-direction: column-reverse; }
+
+      &.lg-nowrap { flex-wrap: nowrap; }
+
+      &.lg-wrap { flex-wrap: wrap; }
+
+      &.lg-wrap-reverse { flex-wrap: wrap-reverse; }
+    }
+  }
+}

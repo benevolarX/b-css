@@ -1,0 +1,16 @@
+@charset 'UTF-8';
+
+@media screen and (min-width: $md) and (min-height: $md-half) {
+
+  .md-float-left { float: left; }
+  .md-float-right { float: right; }
+  .md-float-none { float: none; }
+
+  .md-inline { display: inline; }
+
+  .md-block {
+    display: block;
+    &.md-inline { display: inline-block; }
+  }
+
+}

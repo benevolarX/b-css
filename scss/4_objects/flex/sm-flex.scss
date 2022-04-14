@@ -1,0 +1,30 @@
+@charset 'UTF-8';
+
+@supports (display: flex) {
+  .sm-flex {
+    display: flex;
+
+    flex: var(--sm-flex);
+    flex-flow: var(--sm-flex-flow);
+
+    justify-content: var(--sm-justify-content);
+    align-items: var(--sm-align-items);
+    align-content: var(--sm-align-content);
+
+    &.sm-inline { display: inline-flex; }
+
+    &.sm-row { flex-direction: row; }
+
+    &.sm-row-reverse { flex-direction: row-reverse; }
+
+    &.sm-col { flex-direction: column; }
+
+    &.sm-col-reverse { flex-direction: column-reverse; }
+
+    &.sm-nowrap { flex-wrap: nowrap; }
+
+    &.sm-wrap { flex-wrap: wrap; }
+
+    &.sm-wrap-reverse { flex-wrap: wrap-reverse; }
+  }
+}

@@ -13,17 +13,15 @@
 
     &.inline { display: inline-flex; }
 
-    &.row {
-      flex-direction: row;
-      &.reverse { flex-direction: row-reverse; }
-    }
+    &.row { flex-direction: row; }
+    
+    &.row-reverse { flex-direction: row-reverse; }
 
-    &.col {
-      flex-direction: column;
-      &.reverse { flex-direction: column-reverse; }
-    }
+    &.col { flex-direction: column; }
 
-    &.no-wrap { flex-wrap: nowrap; }
+    &.col-reverse { flex-direction: column-reverse; }
+
+    &.nowrap { flex-wrap: nowrap; }
 
     &.wrap { flex-wrap: wrap; }
 
