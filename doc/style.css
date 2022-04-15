@@ -29,6 +29,8 @@
   --fs-3: 1.4em;
   --fs-2: 1.5em;
   --fs-1: 1.6em;
+
+  --list-group-radius: clamp(2px, 5%, 5px);
 }
 
 /*

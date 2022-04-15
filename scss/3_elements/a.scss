@@ -1,12 +1,15 @@
 @charset 'UTF-8';
 
 a {
-  color: #1b80b7; 
-  transition: all .2s linear;
+  color: currentColor;
+  filter: brightness(.9);
+  transition: all .1s ease-in-out;
 }
 
 a:hover {
-  color: #52bff2; 
+  filter: invert(100%);
+  cursor: pointer;
+  font-size: 1.1em;
 }
 
 a[href^="http"]:empty::before { 
