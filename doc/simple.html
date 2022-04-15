@@ -20,23 +20,15 @@
     <!--<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">-->
     
     <style>
-      .post-link {
-        font-size: 1.6rem;
-        font-weight: bold;
-      }
 
       .meta {
-        color: var(--text-light);
+        color: #ccc;
         font-size: 1rem;
       }
 
-      .blog-item {
-        margin-bottom: 4rem;
-      }
-
-      nav a.current {
-        color: var(--accent) !important;
-        border-color: var(--accent);
+      .current {
+        color: greenyellow !important;
+        border-color: green;
       }
 
       .notice {
@@ -47,26 +39,18 @@
         margin: 2rem 0;
       }
 
-      .medium {
-        font-size: 1.4rem;
-      }
-
-      .small {
-        font-size: 1rem;
-      }
-
-      .button {
+      button {
         border: none;
-        border-radius: 5px;
-        background: var(--accent);
+        border-radius: clamp(2px, 10%, 4px);
+        background: purple;
         font-size: 1rem;
-        color: var(--bg);
+        color: #eee;
         padding: 0.7rem 0.9rem;
         margin: 0.5rem 0;
       }
 
-      .button:hover,
-      .button:focus {
+      button:hover,
+      button:focus {
         filter: brightness(1.4);
         cursor: pointer;
       }
@@ -82,9 +66,7 @@
         stroke: currentColor;
         fill: currentColor;
       }
-
     </style>
-    
   </head>
   <body>
       

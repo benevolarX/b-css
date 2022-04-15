@@ -9,16 +9,17 @@
   --color-light: #bdf;
   --color-dark: #026;
 
+  /* fs-min = font-size min */
   --sm-fs-min: 15px;
   --md-fs-min: 16px;
   --lg-fs-min: 17px;
   --xl-fs-min: 18px;
-
+  /* fs-max = font-size max */
   --sm-fs-max: 17px;
   --md-fs-max: 20px;
   --lg-fs-max: 23px;
   --xl-fs-max: 26px;
-
+  /* font-size for h1-hN */
   --fs-8: 0.8em;
   --fs-7: 0.9em;
   --fs-n: 1em;
@@ -28,7 +29,6 @@
   --fs-3: 1.4em;
   --fs-2: 1.5em;
   --fs-1: 1.6em;
-  
 }
 
 /*

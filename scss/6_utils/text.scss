@@ -1,9 +1,11 @@
 @charset 'UTF-8';
 
-.txt-size-1 { --font-size: var(--txt-size-1); }
-.txt-size-2 { --font-size: var(--txt-size-2); }
-.txt-size-3 { --font-size: var(--txt-size-3); }
-.txt-size-4 { --font-size: var(--txt-size-4); }
-.txt-size-5 { --font-size: var(--txt-size-5); }
-.txt-size-6 { --font-size: var(--txt-size-6); }
-.txt-size-7 { --font-size: var(--txt-size-7); }
+.fs-1 { font-size: var(--fs-1); }
+.fs-2 { font-size: var(--fs-2); }
+.fs-3 { font-size: var(--fs-3); }
+.fs-4 { font-size: var(--fs-4); }
+.fs-5 { font-size: var(--fs-5); }
+.fs-6 { font-size: var(--fs-6); }
+.fs-n { font-size: var(--fs-n); }
+.fs-7 { font-size: var(--fs-7); }
+.fs-8 { font-size: var(--fs-8); }
