@@ -1,6 +1,6 @@
 {
   "name": "@benevolar/b-css",
-  "version": "0.3.0",
+  "version": "0.9.0-dev",
   "description": "small css framework",
   "main": "./scss/index.scss",
   "unpkg": "./css/b-css.css",

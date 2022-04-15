@@ -9,9 +9,15 @@
 @import './6_utils/index';
 
 @media (prefers-color-scheme: dark) {
+
   img, video {
     opacity: 0.8;
   }
+
+  :where(img, video):hover {
+    opacity: 1;
+  }
+
 }
 
 @media (prefers-reduced-motion: reduce) {
