@@ -2,38 +2,34 @@
 
 @import 'variable';
 
-$md-half: $md / 2;
-$lg-half: $lg / 2;
-$xl-half: $xl / 2;
-
 // sm
 @media screen and (max-width: $md) {
   :root {
-    --fs-min: var(--sm-fs-min, #{$sm-fs-min});
-    --fs-max: var(--sm-fs-max, #{$sm-fs-max});
+    --fs-min: var(--sm-fs-min);
+    --fs-max: var(--sm-fs-max);
   }
 }
 
 // md
 @media screen and (min-width: $md) and (min-height: $md-half) {
   :root {
-    --fs-min: var(--md-fs-min, #{$md-fs-min});
-    --fs-max: var(--md-fs-max, #{$md-fs-max});
+    --fs-min: var(--md-fs-min);
+    --fs-max: var(--md-fs-max);
   }
 }
 
 // lg
 @media screen and (min-width: $lg) and (min-height: $lg-half) { // and (max-width: $xl)
   :root {
-    --fs-min: var(--lg-fs-min, #{$lg-fs-min});
-    --fs-max: var(--lg-fs-max, #{$lg-fs-max});
+    --fs-min: var(--lg-fs-min);
+    --fs-max: var(--lg-fs-max);
   }
 }
 
 // xl
 @media screen and (min-width: $xl) and (min-height: $xl-half) {
   :root {
-    --fs-min: var(--xl-fs-min, #{$xl-fs-min});
-    --fs-max: var(--xl-fs-max, #{$xl-fs-max});
+    --fs-min: var(--xl-fs-min);
+    --fs-max: var(--xl-fs-max);
   }
 }

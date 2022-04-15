@@ -1,30 +1,18 @@
 @charset 'UTF-8';
 
 @supports (display: flex) {
+
   .flex {
     display: flex;
-
-    flex: var(--flex);
-    flex-flow: var(--flex-flow);
-
-    justify-content: var(--justify-content);
-    align-items: var(--align-items);
-    align-content: var(--align-content);
-
     &.inline { display: inline-flex; }
-
     &.row { flex-direction: row; }
-    
     &.row-reverse { flex-direction: row-reverse; }
-
     &.col { flex-direction: column; }
-
     &.col-reverse { flex-direction: column-reverse; }
-
-    &.nowrap { flex-wrap: nowrap; }
-
-    &.wrap { flex-wrap: wrap; }
-
-    &.wrap-reverse { flex-wrap: wrap-reverse; }
   }
+
+  .nowrap { flex-wrap: nowrap; }
+  .wrap { flex-wrap: wrap; }
+  .wrap-reverse { flex-wrap: wrap-reverse; }
+
 }

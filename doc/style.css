@@ -1,6 +1,48 @@
 :root {
-  --color-primary: #123c83;
-  --color-second: #135ab1;
-  --color-light: #2279f4;
-  --color-dark: #0b1119;
+  --color-succes: #184;
+  --color-info: #5ae;
+  --color-warning: #d96;
+  --color-danger: #b00;
+
+  --color-primary: #6af;
+  --color-second: #14b;
+  --color-light: #bdf;
+  --color-dark: #026;
+
+  --sm-fs-min: 15px;
+  --md-fs-min: 16px;
+  --lg-fs-min: 17px;
+  --xl-fs-min: 18px;
+
+  --sm-fs-max: 17px;
+  --md-fs-max: 20px;
+  --lg-fs-max: 23px;
+  --xl-fs-max: 26px;
+
+  --fs-8: 0.8em;
+  --fs-7: 0.9em;
+  --fs-n: 1em;
+  --fs-6: 1.1em;
+  --fs-5: 1.2em;
+  --fs-4: 1.3em;
+  --fs-3: 1.4em;
+  --fs-2: 1.5em;
+  --fs-1: 1.6em;
+  
 }
+
+/*
+  --color: var(--dark, #{$dark});
+  --caret-color: var(--dark, #{$dark});
+  --hover-color: var(--red, #{$red});
+
+  --background-attachment: scroll;
+  --background-blend-mode: normal;
+  --background-clip: border-box;
+  --background-color: var(--light, #{$light});
+  --background-image: none;
+  --background-origin: padding-box;
+  --background-position: 0% 0%;
+  --background-repeat: repeat;
+  --background-size: auto;
+*/
