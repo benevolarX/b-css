@@ -57,12 +57,35 @@ html:focus-within {
   background-color: var(--color-selection-bg);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
-html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset,
-legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
@@ -77,8 +100,20 @@ body {
           hyphens: auto;
 }
 
-article, aside, details, dialog, div, figcaption, figure,
-footer, header, hgroup, main, menu, nav, section {
+article,
+aside,
+details,
+dialog,
+div,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -138,7 +173,10 @@ video[autoplay]:not([muted]):not([class]) {
 }
 
 /** CODE **/
-code, kbd, samp, pre {
+code,
+kbd,
+samp,
+pre {
   font-family: Consolas, monospace;
   font-size: 1em;
 }
@@ -148,16 +186,9 @@ code, kbd, samp, pre {
   vertical-align: baseline;
 }
 
-/** HR **/
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-  color: inherit;
-}
-
 /** ABBR (TOOLTIP NATIVE) **/
 abbr[title] {
+  cursor: help;
   border-bottom: none;
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
@@ -172,7 +203,8 @@ small {
   font-size: 80%;
 }
 
-sub, sup {
+sub,
+sup {
   font-size: 0.7em;
   line-height: 0;
   position: relative;
@@ -211,7 +243,8 @@ br + br {
   cursor: not-allowed;
 }
 
-[hidden], [aria-hidden="true"] {
+[hidden],
+[aria-hidden="true"] {
   display: none;
 }
 
@@ -259,6 +292,14 @@ h6 {
   font-size: var(--fs-6);
 }
 
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  color: inherit;
+  background-color: currentColor;
+}
+
 /** FIELDSET (FORM) **/
 :where(fieldset) {
   padding: 0.35em 0.75em 0.625em;
@@ -285,6 +326,27 @@ legend {
 :where([type="search" i]) {
   -webkit-appearance: textfield;
   outline-offset: -2px;
+}
+
+input {
+  border-color: var(--color-primary);
+  caret-color: var(--color-caret, #16f);
+}
+
+input:focus {
+  border-color: var(--color-secondary);
+}
+
+input:not(:-moz-placeholder-shown) {
+  border-color: var(--color-danger);
+}
+
+input:not(:placeholder-shown) {
+  border-color: var(--color-danger);
+}
+
+input:valid {
+  border-color: var(--color-succes);
 }
 
 :where(table) {
@@ -727,9 +789,9 @@ nav a {
   bottom: 100%;
   left: 50%;
   overflow: hidden;
-  padding: .4em .8em;
+  padding: 0.4em 0.8em;
   border: solid 1px var(--color-tooltip-border);
-  border-radius: .1em;
+  border-radius: 0.1em;
   background: var(--color-tooltip-bg);
   color: var(--color-tooltip);
   font-size: var(--fs-tooltip, 0.5em);
@@ -738,7 +800,7 @@ nav a {
   pointer-events: none;
   opacity: 0;
   transform: translate(-50%, 0.4em);
-  transition: opacity .2s, transform .2s;
+  transition: opacity 0.2s, transform 0.2s;
 }
 
 .tooltip:focus::after, .tooltip:hover::after {
@@ -895,7 +957,8 @@ nav a {
 
 */
 @media (prefers-color-scheme: dark) {
-  img, video {
+  img,
+  video {
     opacity: 0.8;
   }
   :where(img, video):hover {

@@ -9,7 +9,7 @@ html {
   tab-size: 4;
   font-family: -apple-system, Tahoma, "Segoe UI", Roboto, system-ui, sans-serif;
   cursor: default;
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
   --fs-base: clamp(var(--fs-min), calc(1vmin + 1vmax), var(--fs-max));
 }
 
@@ -17,19 +17,42 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-::selection{
+::selection {
   color: var(--color-selection);
   background-color: var(--color-selection-bg);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
-html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, 
-legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 0;
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -41,12 +64,24 @@ body {
   hyphens: auto;
 }
 
-article, aside, details, dialog, div, figcaption, figure, 
-footer, header, hgroup, main, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+dialog,
+div,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
 }
 
-/** SUMMARY **/ 
+/** SUMMARY **/
 
 summary {
   display: list-item;
@@ -74,9 +109,13 @@ audio:not([controls]) {
   height: 0;
 }
 
-img:not([alt]) { filter: blur(5px); }
+img:not([alt]) {
+  filter: blur(5px);
+}
 
-video[autoplay]:not([muted]):not([class]) { display: none; }
+video[autoplay]:not([muted]):not([class]) {
+  display: none;
+}
 
 /** DIALOG (MODAL) **/
 
@@ -99,29 +138,24 @@ video[autoplay]:not([muted]):not([class]) { display: none; }
 
 /** CODE **/
 
-code, kbd, samp, pre {
+code,
+kbd,
+samp,
+pre {
   font-family: Consolas, monospace;
   font-size: 1em;
 }
 
-/** PROGRESS BAR **/ 
+/** PROGRESS BAR **/
 
 :where(progress) {
   vertical-align: baseline;
 }
 
-/** HR **/
-
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-  color: inherit;
-}
-
 /** ABBR (TOOLTIP NATIVE) **/
 
 abbr[title] {
+  cursor: help;
   border-bottom: none;
   text-decoration: underline dotted;
 }
@@ -136,7 +170,8 @@ small {
   font-size: 80%;
 }
 
-sub, sup {
+sub,
+sup {
   font-size: 0.7em;
   line-height: 0;
   position: relative;
@@ -178,8 +213,9 @@ br + br {
   cursor: not-allowed;
 }
 
-[hidden], [aria-hidden="true"] { 
-  display: none; 
+[hidden],
+[aria-hidden="true"] {
+  display: none;
 }
 
 :where([aria-hidden="false" i][hidden]) {

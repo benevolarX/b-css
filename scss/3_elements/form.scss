@@ -30,3 +30,17 @@ legend {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
+
+input {
+  border-color: var(--color-primary);
+  caret-color: var(--color-caret, #16f);
+}
+input:focus {
+  border-color: var(--color-secondary);
+}
+input:not(:placeholder-shown) {
+  border-color: var(--color-danger);
+}
+input:valid {
+  border-color: var(--color-succes);
+}
