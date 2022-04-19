@@ -3,24 +3,22 @@
   --color-info: #5ae;
   --color-warning: #d96;
   --color-danger: #b00;
-
   --color-primary: #6af;
   --color-primary-opposite: #222;
   --color-secondary: #14b;
   --color-secondary-opposite: #ddd;
-  --color-neutral: #999;  /* grey */
-  --color-light: #bdf;    /* white */
-  --color-dark: #026;     /* black */
-
+  --color-neutral: #999;
+  /* grey */
+  --color-light: #bdf;
+  /* white */
+  --color-dark: #026;
+  /* black */
   --color-selection: #16f;
   --color-selection-bg: #ddd;
-
   --color-tooltip-border: #15f;
   --color-tooltip-bg: #16f;
   --color-tooltip: #ddd;
-
   --hover-brightness: 0.8;
-
   /* fs-min = font-size min */
   --sm-fs-min: 15px;
   --md-fs-min: 16px;
@@ -41,7 +39,5 @@
   --fs-3: 1.4em;
   --fs-2: 1.5em;
   --fs-1: 1.6em;
-
   --list-group-radius: clamp(2px, 5%, 5px);
 }
-

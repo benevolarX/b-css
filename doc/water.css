@@ -1,6 +1,8 @@
 @charset "UTF-8";
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   line-height: 1.4;
   max-width: 800px;
   margin: 20px auto;
@@ -10,8 +12,11 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-button, input, textarea {
-  transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
+button,
+input,
+textarea {
+  transition: background-color 0.1s linear, border-color 0.1s linear,
+    color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
 }
 
 h1 {
@@ -70,31 +75,34 @@ address {
   font-style: normal;
 }
 
-a[href^='mailto']::before {
-  content: '📧 ';
+a[href^="mailto"]::before {
+  content: "📧 ";
 }
 
-a[href^='tel']::before {
-  content: '📞 ';
+a[href^="tel"]::before {
+  content: "📞 ";
 }
 
-a[href^='sms']::before {
-  content: '💬 ';
+a[href^="sms"]::before {
+  content: "💬 ";
 }
 
 button,
-input[type='submit'],
-input[type='button'],
-input[type='checkbox'] {
+input[type="submit"],
+input[type="button"],
+input[type="checkbox"] {
   cursor: pointer;
 }
 
-input:not([type='checkbox']):not([type='radio']),
+input:not([type="checkbox"]):not([type="radio"]),
 select {
   display: block;
 }
 
-input, select, button, textarea {
+input,
+select,
+button,
+textarea {
   color: #ffffff;
   background-color: #161f27;
   font-family: inherit;
@@ -107,8 +115,10 @@ input, select, button, textarea {
   outline: none;
 }
 
-input:not([type='checkbox']):not([type='radio']),
-select, button, textarea {
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+button,
+textarea {
   -webkit-appearance: none;
 }
 
@@ -119,14 +129,16 @@ textarea {
   resize: vertical;
 }
 
-button, input[type='submit'], input[type='button'] {
+button,
+input[type="submit"],
+input[type="button"] {
   padding-right: 30px;
   padding-left: 30px;
 }
 
 button:hover,
-input[type='submit']:hover,
-input[type='button']:hover {
+input[type="submit"]:hover,
+input[type="button"]:hover {
   background: #324759;
 }
 
@@ -137,10 +149,10 @@ textarea:focus {
   box-shadow: 0 0 0 2px #0096bfab;
 }
 
-input[type='checkbox']:active,
-input[type='radio']:active,
-input[type='submit']:active,
-input[type='button']:active,
+input[type="checkbox"]:active,
+input[type="radio"]:active,
+input[type="submit"]:active,
+input[type="button"]:active,
 button:active {
   transform: translateY(2px);
 }
@@ -150,7 +162,7 @@ select:disabled,
 button:disabled,
 textarea:disabled {
   cursor: not-allowed;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 ::-webkit-input-placeholder {
@@ -178,7 +190,8 @@ a:hover {
   text-decoration: underline;
 }
 
-code, kbd {
+code,
+kbd {
   background: #161f27;
   color: #ffbe85;
   padding: 5px;
@@ -206,7 +219,8 @@ table {
   width: 100%;
 }
 
-td, th {
+td,
+th {
   padding: 6px;
   text-align: left;
 }
