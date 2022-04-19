@@ -1,0 +1,192 @@
+@charset 'UTF-8';
+
+html {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  text-size-adjust: 100%;
+  overflow-wrap: break-word;
+  word-break: normal;
+  tab-size: 4;
+  font-family: -apple-system, Tahoma, "Segoe UI", Roboto, system-ui, sans-serif;
+  cursor: default;
+  scroll-behavior: smooth; 
+  --fs-base: clamp(var(--fs-min), calc(1vmin + 1vmax), var(--fs-max));
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+::selection{
+  color: var(--color-selection);
+  background-color: var(--color-selection-bg);
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, 
+legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  min-height: 95vh;
+  margin: 0 auto;
+  text-rendering: optimizeSpeed;
+  font-size: var(--fs-base);
+  line-height: 1.4;
+  hyphens: auto;
+}
+
+article, aside, details, dialog, div, figcaption, figure, 
+footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+
+/** SUMMARY **/ 
+
+summary {
+  display: list-item;
+}
+
+/** NAV OL/UL **/
+
+:where(nav) :where(ol, ul, dl) {
+  list-style: none;
+}
+
+/** AUDIO-VISUEL **/
+
+:where(audio, canvas, embed, iframe, img, object, picture, progress, svg, video) {
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
+  max-width: 100%;
+  border: none;
+  object-fit: contain;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img:not([alt]) { filter: blur(5px); }
+
+video[autoplay]:not([muted]):not([class]) { display: none; }
+
+/** DIALOG (MODAL) **/
+
+:where(dialog) {
+  background-color: inherit;
+  border: solid;
+  color: inherit;
+  height: fit-content;
+  left: 0;
+  margin: auto;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  width: fit-content;
+}
+
+:where(dialog:not([open])) {
+  display: none;
+}
+
+/** CODE **/
+
+code, kbd, samp, pre {
+  font-family: Consolas, monospace;
+  font-size: 1em;
+}
+
+/** PROGRESS BAR **/ 
+
+:where(progress) {
+  vertical-align: baseline;
+}
+
+/** HR **/
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  color: inherit;
+}
+
+/** ABBR (TOOLTIP NATIVE) **/
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline dotted;
+}
+
+/** FONT SIZE/WEIGHT **/
+
+:where(b, strong, optgroup) {
+  font-weight: bold;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 0.7em;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/** QUOTE / CITATION **/
+
+:where(q) {
+  font-style: italic;
+  quotes: "“" "”";
+}
+
+/** TIPS BR **/
+
+br + br {
+  display: none;
+}
+
+/** ARIA **/
+
+[aria-controls] {
+  cursor: pointer;
+}
+
+:where([aria-busy="true" i]) {
+  cursor: progress;
+}
+
+:where([aria-disabled="true" i], [disabled]) {
+  cursor: not-allowed;
+}
+
+[hidden], [aria-hidden="true"] { 
+  display: none; 
+}
+
+:where([aria-hidden="false" i][hidden]) {
+  display: initial;
+}
+
+:where([aria-hidden="false" i][hidden]:not(:focus)) {
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}

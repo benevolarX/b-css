@@ -18,3 +18,7 @@ La nouvelle version 1.0 sera en ligne prochainement
 Pas mal de breaking change pour la 1.0
 
 --txt-size-N deviens --fs-N
+suppression des @keyframes
+remplacement de certains rem par des em 
+tooltip utilise data-tooltip pour son contenu
+suppression de tooltip-container

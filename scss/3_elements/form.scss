@@ -1,0 +1,32 @@
+@charset 'UTF-8';
+
+/** FIELDSET (FORM) **/
+
+:where(fieldset) {
+  padding: 0.35em 0.75em 0.625em;
+  border: 1px solid inherit;
+}
+
+/** LEGEND (FORM) **/
+
+legend {
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+  color: inherit;
+}
+
+/** TEXTAREA (FORM) **/
+
+:where(textarea) {
+  overflow: auto;
+  vertical-align: top;
+  margin: 0;
+  resize: vertical;
+}
+
+:where([type="search" i]) {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}

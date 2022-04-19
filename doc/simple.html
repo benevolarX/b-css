@@ -40,6 +40,7 @@
       }
 
       button {
+        display: inline;
         border: none;
         border-radius: clamp(2px, 10%, 4px);
         background: purple;
@@ -47,6 +48,10 @@
         color: #eee;
         padding: 0.7rem 0.9rem;
         margin: 0.5rem 0;
+      }
+
+      button * {
+        text-decoration: none;
       }
 
       button:hover,
@@ -65,6 +70,10 @@
         stroke-width: 0;
         stroke: currentColor;
         fill: currentColor;
+      }
+
+      nav {
+        min-height: 40px;
       }
     </style>
   </head>
@@ -126,9 +135,10 @@
 
 <p><a href="https://example.com">I’m a hyperlink</a></p>
 
-<p><button>I’m a button</button></p>
-
-<p><a href="https://example.com"><button>I’m a button with a link</button></a></p>
+<p>
+  <button>I’m a button</button>
+  <a href="https://example.com"><button>I’m a button with a link</button></a>
+</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a href="https://example.com"&gt;I'm a hyperlink&lt;/a&gt;
 

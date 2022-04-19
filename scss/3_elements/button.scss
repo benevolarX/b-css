@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+
+/** BUTTON (FORM & cie) **/
+
+:where(button, [type="button" i], [type="reset" i], [type="submit" i]) {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+:where(button, input, optgroup, select, textarea) {
+ font-family: inherit;
+ font-size: 100%;
+ line-height: 1.15;
+ margin: 0;
+}
+
+:where(button, select) {
+ text-transform: none;
+}
