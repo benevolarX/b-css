@@ -5,6 +5,7 @@ html {
   background-repeat: no-repeat;
   text-size-adjust: 100%;
   overflow-wrap: break-word;
+  overflow-x: hidden;
   word-break: normal;
   tab-size: 4;
   font-family: -apple-system, Tahoma, "Segoe UI", Roboto, system-ui, sans-serif;
@@ -144,6 +145,7 @@ samp,
 pre {
   font-family: Consolas, monospace;
   font-size: 1em;
+  overflow-x: auto;
 }
 
 /** PROGRESS BAR **/

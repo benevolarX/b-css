@@ -9,8 +9,41 @@
   <meta name="author" content="benevolar" />
   <link rel="stylesheet" type="text/css" href="../css/b-css.min.css" />
   <link rel="stylesheet" type="text/css" href="./style.css" />
+  <style>
+    html {
+      width: 100vw;
+      padding: 0;
+      margin: 0;
+      background-color: green;
+    }
+
+    body {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: blue;
+      width: 100vw;
+    }
+
+    .body {
+      margin: auto;
+      width: clamp(624px, 60%, 1248px);
+      background-color: red;
+      min-height: 100vh;
+    }
+  </style>
 </head>
 
-<body></body>
+<body>
+
+  <div class="body">
+    hello
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. In doloribus assumenda sunt impedit ipsa maiores, fugiat
+    odit sapiente quidem accusamus magnam, excepturi, omnis totam minus odio blanditiis ullam laudantium quisquam.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate laboriosam eum rerum. Molestiae, veniam est!
+    Molestiae id temporibus aspernatur cum sint, accusamus repellendus veniam unde a explicabo deserunt tenetur illo.
+  </div>
+
+</body>
 
 </html>

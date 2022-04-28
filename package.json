@@ -6,7 +6,7 @@
   "unpkg": "./css/b-css.css",
   "style": "./css/b-css.min.css",
   "engines": {
-    "node": ">=8"
+    "node": ">=16"
   },
   "engineStrict": true,
   "scripts": {
@@ -17,7 +17,8 @@
     "build-cleancss": "cleancss -o css/b-css.min.css css/b-css.css",
     "rebuild": "npm run clean && npm run build",
     "restart": "npm run clean && npm run start",
-    "clean": "rimraf css/* && rimraf .sass-cache/"
+    "clean": "rimraf css/* && rimraf .sass-cache/",
+    "list-browser": "npx browserslist"
   },
   "repository": {
     "type": "git",
@@ -27,16 +28,15 @@
     "b-css",
     "css",
     "framework",
-    "custom-property",
-    "lightweight",
+	"responsive",
+	"lightweight",
+	"front-end",
     "scss",
+    "custom-property",
     "flexbox",
     "grid",
-    "small",
-    "responsive",
     "itcss",
-    "oocss",
-    "sass"
+    "oocss"
   ],
   "author": "benevolar",
   "license": "MIT",
@@ -45,17 +45,18 @@
   },
   "homepage": "https://github.com/benevolarX/b-css#readme",
   "devDependencies": {
-    "autoprefixer": "^10.4.4",
+    "autoprefixer": "^10.4.5",
     "clean-css-cli": "^5.6.0",
     "node-sass": "^7.0.1",
     "postcss-cli": "^9.1.0",
     "rimraf": "^3.0.2"
   },
   "browserslist": [
-    ">= 5%",
     "last 2 versions",
+    ">= 5%",
     "not ie 11",
     "not op_mini all",
+    "not edge <= 18",
     "not dead"
   ]
 }

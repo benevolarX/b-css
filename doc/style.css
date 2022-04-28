@@ -1,4 +1,21 @@
 :root {
+  --c-bw-0: #000;
+  --c-bw-1: #111;
+  --c-bw-2: #222;
+  --c-bw-3: #333;
+  --c-bw-4: #444;
+  --c-bw-5: #555;
+  --c-bw-6: #666;
+  --c-bw-7: #777;
+  --c-bw-8: #888;
+  --c-bw-9: #999;
+  --c-bw-10: #aaa;
+  --c-bw-11: #bbb;
+  --c-bw-12: #ccc;
+  --c-bw-13: #ddd;
+  --c-bw-14: #eee;
+  --c-bw-15: #fff;
+
   --color-succes: #184;
   --color-info: #5ae;
   --color-warning: #d96;
