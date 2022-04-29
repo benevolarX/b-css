@@ -34,6 +34,7 @@ html {
      -moz-text-size-adjust: 100%;
           text-size-adjust: 100%;
   overflow-wrap: break-word;
+  overflow-x: hidden;
   word-break: normal;
   -moz-tab-size: 4;
        tab-size: 4;
@@ -179,6 +180,7 @@ samp,
 pre {
   font-family: Consolas, monospace;
   font-size: 1em;
+  overflow-x: auto;
 }
 
 /** PROGRESS BAR **/
@@ -866,6 +868,83 @@ nav a {
 .list-group-x > *:last-child {
   border-top-right-radius: var(--list-group-radius);
   border-bottom-right-radius: var(--list-group-radius);
+}
+
+/*
+  --switch-h: 3em;
+  --color-switch-on: var(--color-primary, red);
+  --color-switch-off: #333;
+*/
+.switch {
+  --a: calc(var(--switch-h) / 12);
+  --b: calc(var(--switch-h) / 24);
+  --c: calc(var(--switch-h) / 2 - var(--a));
+  position: relative;
+  display: inline-block;
+  width: var(--switch-h);
+  height: calc(var(--switch-h) / 2);
+  border-radius: var(--switch-h);
+}
+
+.switch.succes {
+  --color-switch-on: var(--color-succes);
+}
+
+.switch.info {
+  --color-switch-on: var(--color-info);
+}
+
+.switch.warning {
+  --color-switch-on: var(--color-warning);
+}
+
+.switch.danger {
+  --color-switch-on: var(--color-danger);
+}
+
+.switch input[type="checkbox"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  overflow: hidden;
+  border-radius: var(--switch-h);
+  background-color: var(--color-switch-off);
+  box-shadow: inset 0 0 var(--b) var(--color-lg);
+  transition: 0.4s;
+}
+
+.switch input[type="checkbox"]:before {
+  position: absolute;
+  content: "";
+  height: var(--c);
+  width: var(--c);
+  left: var(--a);
+  bottom: var(--b);
+  background-color: var(--color-light);
+  transition: 0.2s;
+  border-radius: 50%;
+}
+
+.switch input:focus {
+  outline: solid var(--b) var(--color-dark);
+}
+
+.switch input:checked {
+  background-color: var(--color-switch-on);
+  color: var(--color-light);
+}
+
+.switch input:checked:before {
+  transform: translateX(var(--c));
 }
 
 .fs-1 {

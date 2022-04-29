@@ -1,0 +1,75 @@
+@charset 'UTF-8';
+
+/*
+  --switch-h: 3em;
+  --color-switch-on: var(--color-primary, red);
+  --color-switch-off: #333;
+*/
+
+.switch {
+  --a: calc(var(--switch-h) / 12);
+  --b: calc(var(--switch-h) / 24);
+  --c: calc(var(--switch-h) / 2 - var(--a));
+
+  position: relative;
+  display: inline-block;
+  width: var(--switch-h);
+  height: calc(var(--switch-h) / 2);
+  border-radius: var(--switch-h);
+
+  &.succes {
+    --color-switch-on: var(--color-succes);
+  }
+
+  &.info {
+    --color-switch-on: var(--color-info);
+  }
+
+  &.warning {
+    --color-switch-on: var(--color-warning);
+  }
+
+  &.danger {
+    --color-switch-on: var(--color-danger);
+  }
+
+  & input[type="checkbox"] {
+    appearance: none;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    user-select: none;
+    overflow: hidden;
+    border-radius: var(--switch-h);
+    background-color: var(--color-switch-off);
+    box-shadow: inset 0 0 var(--b) var(--color-lg);
+    transition: 0.4s;
+
+    &:before {
+      position: absolute;
+      content: "";
+      height: var(--c);
+      width: var(--c);
+      left: var(--a);
+      bottom: var(--b);
+      background-color: var(--color-light);
+      transition: 0.2s;
+      border-radius: 50%;
+    }
+  }
+
+  & input:focus {
+    outline: solid var(--b) var(--color-dark);
+  }
+
+  & input:checked {
+    background-color: var(--color-switch-on);
+    color: var(--color-light);
+    &:before {
+      transform: translateX(var(--c));
+    }
+  }
+}

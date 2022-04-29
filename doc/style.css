@@ -20,13 +20,15 @@
   --color-info: #5ae;
   --color-warning: #d96;
   --color-danger: #b00;
-  --color-primary: #6af;
+  --color-primary: #43c;
   --color-primary-opposite: #222;
   --color-secondary: #14b;
   --color-secondary-opposite: #ddd;
+  --color-lg: #bbb; /* light grey */
+  --color-dg: #333; /* dark grey */
   --color-neutral: #999;
   /* grey */
-  --color-light: #bdf;
+  --color-light: #eee;
   /* white */
   --color-dark: #026;
   /* black */
@@ -57,4 +59,22 @@
   --fs-2: 1.5em;
   --fs-1: 1.6em;
   --list-group-radius: clamp(2px, 5%, 5px);
+
+  --switch-h: 3em;
+  --color-switch-on: var(--color-primary);
+  --color-switch-off: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-lg: #333; /* light grey */
+    --color-dg: #bbb; /* dark grey */
+    --color-neutral: #999;
+    /* grey */
+    --color-light: #026;
+    /* white */
+    --color-dark: #eee;
+    --color-switch-on: var(--color-primary);
+    --color-switch-off: #888;
+  }
 }
