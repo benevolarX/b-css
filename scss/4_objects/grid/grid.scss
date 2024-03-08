@@ -1,34 +1,71 @@
 @charset 'UTF-8';
 
-@supports (display: grid) {
-  .grid {
-    display: grid;
+.grid {
+  display: grid;
 
-    // taille par defaut des lignes supplémentaires
-    grid-auto-rows: var(--g-auto-row); 
-    // taille par defaut des colonnes supplémentaires
-    grid-auto-columns: var(--g-auto-col); 
-    // marge entre les blocs
-    gap: var(--g-row-gap, 0) var(--g-col-gap, 0);
+  // taille par defaut des lignes supplémentaires
+  grid-auto-rows: var(--g-auto-row);
+  // taille par defaut des colonnes supplémentaires
+  grid-auto-columns: var(--g-auto-col);
+  // marge entre les blocs
+  gap: var(--g-row-gap, 0) var(--g-col-gap, 0);
 
-    &.inline { display: inline-grid; }
-    &.row { grid-auto-flow: column; }
-    &.row-dense { grid-auto-flow: column dense; }
-    &.col { grid-auto-flow: row; }
-    &.col-dense { grid-auto-flow: row dense; }
+  &.inline {
+    display: inline-grid;
   }
-
-  .no-gap { gap: 0; }
-  .fit-col { grid-template-columns: repeat(auto-fit, minmax(var(--g-item-min-w), var(--g-item-max-w))); }
-  .fill-col { grid-template-columns: repeat(auto-fill, minmax(var(--g-item-min-w), var(--g-item-max-w))); }
-  .fit-row { grid-template-rows: repeat(auto-fit, minmax(var(--g-item-min-w), var(--g-item-max-w))); }
-  .fill-row { grid-template-rows: repeat(auto-fill, minmax(var(--g-item-min-w), var(--g-item-max-w))); }
-
-  @for $key from 1 through 12 {
-    .max-col-#{$key} { grid-template-columns: repeat(#{$key}, 1fr); }
-    .max-row-#{$key} { grid-template-rows: repeat(#{$key}, 1fr); }
-    .col-#{$key} { grid-column-end: span #{$key}; }
-    .row-#{$key} { grid-row-end: span #{$key}; }
+  &.row {
+    grid-auto-flow: column;
   }
+  &.row-dense {
+    grid-auto-flow: column dense;
+  }
+  &.col {
+    grid-auto-flow: row;
+  }
+  &.col-dense {
+    grid-auto-flow: row dense;
+  }
+}
 
+.no-gap {
+  gap: 0;
+}
+.fit-col {
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--g-item-min-w), var(--g-item-max-w))
+  );
+}
+.fill-col {
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--g-item-min-w), var(--g-item-max-w))
+  );
+}
+.fit-row {
+  grid-template-rows: repeat(
+    auto-fit,
+    minmax(var(--g-item-min-w), var(--g-item-max-w))
+  );
+}
+.fill-row {
+  grid-template-rows: repeat(
+    auto-fill,
+    minmax(var(--g-item-min-w), var(--g-item-max-w))
+  );
+}
+
+@for $key from 1 through 12 {
+  .max-col-#{$key} {
+    grid-template-columns: repeat(#{$key}, 1fr);
+  }
+  .max-row-#{$key} {
+    grid-template-rows: repeat(#{$key}, 1fr);
+  }
+  .col-#{$key} {
+    grid-column-end: span #{$key};
+  }
+  .row-#{$key} {
+    grid-row-end: span #{$key};
+  }
 }

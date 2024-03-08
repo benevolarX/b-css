@@ -1,18 +1,30 @@
 @charset 'UTF-8';
 
-@supports (display: flex) {
-
-  .flex {
-    display: flex;
-    &.inline { display: inline-flex; }
-    &.row { flex-direction: row; }
-    &.row-reverse { flex-direction: row-reverse; }
-    &.col { flex-direction: column; }
-    &.col-reverse { flex-direction: column-reverse; }
+.flex {
+  display: flex;
+  &.inline {
+    display: inline-flex;
   }
+  &.row {
+    flex-direction: row;
+  }
+  &.row-reverse {
+    flex-direction: row-reverse;
+  }
+  &.col {
+    flex-direction: column;
+  }
+  &.col-reverse {
+    flex-direction: column-reverse;
+  }
+}
 
-  .nowrap { flex-wrap: nowrap; }
-  .wrap { flex-wrap: wrap; }
-  .wrap-reverse { flex-wrap: wrap-reverse; }
-
+.nowrap {
+  flex-wrap: nowrap;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
 }

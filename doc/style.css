@@ -19,11 +19,13 @@
   --color-succes: #184;
   --color-info: #5ae;
   --color-warning: #d96;
-  --color-danger: #b00;
-  --color-primary: #43c;
-  --color-primary-opposite: #222;
-  --color-secondary: #14b;
-  --color-secondary-opposite: #ddd;
+  --color-danger: #c00;
+
+  --color-primary: rgb(88, 63, 253);
+  --color-primary-opposite: #fff;
+  --color-secondary: rgb(36, 156, 208);
+  --color-secondary-opposite: #fff;
+
   --color-lg: #bbb; /* light grey */
   --color-dg: #333; /* dark grey */
   --color-neutral: #999;
