@@ -10,7 +10,7 @@ que sont flex et grid puis les débuts des variables css.
 Quand je repense au nombre d'heures passés à chercher
 commencer centrer une div, je suis heureux de voir
 que mon problème a pu finalement trouver une solution
-après la dépréciation de <center></center>
+après la dépréciation de la balise center
 
 Pour mettre en pratique ces nouveautés, j'ai souhaité
 créé mon propre framework css mais j'ai commis plusieurs
