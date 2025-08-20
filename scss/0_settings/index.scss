@@ -1,0 +1,35 @@
+@charset 'UTF-8';
+
+@import 'variable';
+
+// sm
+@media screen and (max-width: $md) {
+  :root {
+    --fs-min: var(--sm-fs-min);
+    --fs-max: var(--sm-fs-max);
+  }
+}
+
+// md
+@media screen and (min-width: $md) and (min-height: $md-half) {
+  :root {
+    --fs-min: var(--md-fs-min);
+    --fs-max: var(--md-fs-max);
+  }
+}
+
+// lg
+@media screen and (min-width: $lg) and (min-height: $lg-half) { // and (max-width: $xl)
+  :root {
+    --fs-min: var(--lg-fs-min);
+    --fs-max: var(--lg-fs-max);
+  }
+}
+
+// xl
+@media screen and (min-width: $xl) and (min-height: $xl-half) {
+  :root {
+    --fs-min: var(--xl-fs-min);
+    --fs-max: var(--xl-fs-max);
+  }
+}

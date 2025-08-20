@@ -1,0 +1,42 @@
+@charset 'UTF-8';
+
+
+:where(table) {
+  display: inline-table;
+  min-width: 60%;
+  table-layout: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-indent: 0;
+  border: 1px solid var(--color-neutral);
+}
+
+tr {
+  --hover-bg-color: var(--color-secondary-opposite);
+  --hover-color: var(--color-secondary);
+}
+
+tr:not(:first-child) {
+  border-top: solid 1px var(--color-neutral);
+}
+
+tr:nth-child(even) {
+  --hover-bg-color: var(--color-primary-opposite);
+  --hover-color: var(--color-primary);
+  background-color: var(--color-secondary);
+  color: var(--color-secondary-opposite);
+}
+
+tr:nth-child(odd) {
+  background-color: var(--color-primary);
+  color: var(--color-primary-opposite);
+}
+
+tr:hover {
+  background-color: var(--hover-bg-color);
+  color: var(--hover-color);
+}
+
+td:not(:last-child) {
+  border-right: solid 1px var(--color-neutral);
+}

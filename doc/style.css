@@ -1,0 +1,82 @@
+:root {
+  --c-bw-0: #000;
+  --c-bw-1: #111;
+  --c-bw-2: #222;
+  --c-bw-3: #333;
+  --c-bw-4: #444;
+  --c-bw-5: #555;
+  --c-bw-6: #666;
+  --c-bw-7: #777;
+  --c-bw-8: #888;
+  --c-bw-9: #999;
+  --c-bw-10: #aaa;
+  --c-bw-11: #bbb;
+  --c-bw-12: #ccc;
+  --c-bw-13: #ddd;
+  --c-bw-14: #eee;
+  --c-bw-15: #fff;
+
+  --color-succes: #184;
+  --color-info: #5ae;
+  --color-warning: #d96;
+  --color-danger: #c00;
+
+  --color-primary: rgb(88, 63, 253);
+  --color-primary-opposite: #fff;
+  --color-secondary: rgb(36, 156, 208);
+  --color-secondary-opposite: #fff;
+
+  --color-lg: #bbb; /* light grey */
+  --color-dg: #333; /* dark grey */
+  --color-neutral: #999;
+  /* grey */
+  --color-light: #eee;
+  /* white */
+  --color-dark: #026;
+  /* black */
+  --color-selection: #16f;
+  --color-selection-bg: #ddd;
+  --color-tooltip-border: #15f;
+  --color-tooltip-bg: #16f;
+  --color-tooltip: #ddd;
+  --hover-brightness: 0.8;
+  /* fs-min = font-size min */
+  --sm-fs-min: 15px;
+  --md-fs-min: 16px;
+  --lg-fs-min: 17px;
+  --xl-fs-min: 18px;
+  /* fs-max = font-size max */
+  --sm-fs-max: 17px;
+  --md-fs-max: 20px;
+  --lg-fs-max: 23px;
+  --xl-fs-max: 26px;
+  /* font-size for h1-hN */
+  --fs-8: 0.8em;
+  --fs-7: 0.9em;
+  --fs-n: 1em;
+  --fs-6: 1.1em;
+  --fs-5: 1.2em;
+  --fs-4: 1.3em;
+  --fs-3: 1.4em;
+  --fs-2: 1.5em;
+  --fs-1: 1.6em;
+  --list-group-radius: clamp(2px, 5%, 5px);
+
+  --switch-h: 3em;
+  --color-switch-on: var(--color-primary);
+  --color-switch-off: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-lg: #333; /* light grey */
+    --color-dg: #bbb; /* dark grey */
+    --color-neutral: #999;
+    /* grey */
+    --color-light: #026;
+    /* white */
+    --color-dark: #eee;
+    --color-switch-on: var(--color-primary);
+    --color-switch-off: #888;
+  }
+}

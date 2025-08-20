@@ -1,0 +1,63 @@
+{
+  "name": "@benevolar/b-css",
+  "version": "0.9.0-dev",
+  "description": "small css framework",
+  "main": "./scss/index.scss",
+  "unpkg": "./css/b-css.css",
+  "style": "./css/b-css.min.css",
+  "engines": {
+    "node": ">=20"
+  },
+  "engineStrict": true,
+  "scripts": {
+    "start": "pnpm run build-css -- --watch",
+    "build": "pnpm run build-css && pnpm run build-prefix && pnpm run build-cleancss",
+    "build-css": "node-sass --scss --output-style expanded --source-map true scss/index.scss css/b-css.css",
+    "build-prefix": "postcss --use autoprefixer --map false --output css/b-css.css css/b-css.css",
+    "build-cleancss": "cleancss -o css/b-css.min.css css/b-css.css",
+    "rebuild": "pnpm run clean && pnpm run build",
+    "restart": "pnpm run clean && pnpm run start",
+    "clean": "rimraf css/* && rimraf .sass-cache/",
+    "list-browser": "npx browserslist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benevolarX/b-css.git"
+  },
+  "keywords": [
+    "b-css",
+    "css",
+    "framework",
+    "responsive",
+    "lightweight",
+    "front-end",
+    "scss",
+    "custom-property",
+    "flexbox",
+    "grid",
+    "itcss",
+    "oocss"
+  ],
+  "author": "benevolar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benevolarX/b-css/issues"
+  },
+  "homepage": "https://github.com/benevolarX/b-css#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.18",
+    "clean-css-cli": "^5.6.3",
+    "node-sass": "^9.0.0",
+    "postcss-cli": "^11.0.0",
+    "rimraf": "^5.0.5"
+  },
+  "browserslist": [
+    "defaults",
+    "last 2 versions",
+    ">= 5%",
+    "not ie 11",
+    "not op_mini all",
+    "not edge <= 18",
+    "not dead"
+  ]
+}

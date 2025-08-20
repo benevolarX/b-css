@@ -1,0 +1,9 @@
+@charset 'UTF-8';
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  color: inherit;
+  background-color: currentColor;
+}

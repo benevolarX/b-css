@@ -1,0 +1,16 @@
+@charset 'UTF-8';
+
+@media screen and (min-width: $xl) and (min-height: $xl-half) {
+
+  .xl-float-left { float: left; }
+  .xl-float-right { float: right; }
+  .xl-float-none { float: none; }
+
+  .xl-inline { display: inline; }
+
+  .xl-block {
+    display: block;
+    &.xl-inline { display: inline-block; }
+  }
+
+}

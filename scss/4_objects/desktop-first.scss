@@ -1,0 +1,35 @@
+@charset 'UTF-8';
+
+/*
+@media screen and (min-width: $xl) and (min-height: $xl-half) { // xl
+@media screen and (max-width: $xl) and (min-height: $lg-half) { // lg
+@media screen and (max-width: $lg) and (min-height: $md-half) { // md
+@media screen and (max-width: $md) { // sm
+*/
+
+// desktop first
+
+@media screen and (min-width: $xl) and (min-height: $xl-half) { // xl
+  @import 'bloc/xl-bloc';
+  @import 'flex/xl-flex';
+  @import 'grid/xl-grid';
+  @import 'util/xl-util';
+}
+@media screen and (max-width: $xl) and (min-height: $lg-half) { // lg
+  @import 'bloc/lg-bloc';
+  @import 'flex/lg-flex';
+  @import 'grid/lg-grid';
+  @import 'util/lg-util';
+}
+@media screen and (max-width: $lg) and (min-height: $md-half) { // md
+  @import 'bloc/md-bloc';
+  @import 'flex/md-flex';
+  @import 'grid/md-grid';
+  @import 'util/md-util';
+}
+@media screen and (max-width: $md) { // sm
+  @import 'bloc/sm-bloc';
+  @import 'flex/sm-flex';
+  @import 'grid/sm-grid';
+  @import 'util/sm-util';
+}

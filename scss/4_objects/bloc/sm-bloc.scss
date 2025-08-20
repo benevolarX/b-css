@@ -1,0 +1,12 @@
+@charset 'UTF-8';
+
+.sm-float-left { float: left; }
+.sm-float-right { float: right; }
+.sm-float-none { float: none; }
+
+.sm-inline { display: inline; }
+
+.sm-block {
+  display: block;
+  &.sm-inline { display: inline-block; }
+}
