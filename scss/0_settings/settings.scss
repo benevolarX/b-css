@@ -1,9 +1,9 @@
 @charset 'UTF-8';
 
-@import 'variable';
+@use './variable';
 
 // sm
-@media screen and (max-width: $md) {
+@media screen and (max-width: variable.$md) {
   :root {
     --fs-min: var(--sm-fs-min);
     --fs-max: var(--sm-fs-max);
@@ -11,7 +11,7 @@
 }
 
 // md
-@media screen and (min-width: $md) and (min-height: $md-half) {
+@media screen and (min-width: variable.$md) and (min-height: variable.$md-half) {
   :root {
     --fs-min: var(--md-fs-min);
     --fs-max: var(--md-fs-max);
@@ -19,7 +19,7 @@
 }
 
 // lg
-@media screen and (min-width: $lg) and (min-height: $lg-half) { // and (max-width: $xl)
+@media screen and (min-width: variable.$lg) and (min-height: variable.$lg-half) { // and (max-width: $xl)
   :root {
     --fs-min: var(--lg-fs-min);
     --fs-max: var(--lg-fs-max);
@@ -27,7 +27,7 @@
 }
 
 // xl
-@media screen and (min-width: $xl) and (min-height: $xl-half) {
+@media screen and (min-width: variable.$xl) and (min-height: variable.$xl-half) {
   :root {
     --fs-min: var(--xl-fs-min);
     --fs-max: var(--xl-fs-max);

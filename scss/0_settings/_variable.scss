@@ -6,6 +6,6 @@ $md: 768px;
 $lg: 1248px;
 $xl: 1872px;
 
-$md-half: $md / 2;
-$lg-half: $lg / 2;
-$xl-half: $xl / 2;
+$md-half: calc($md / 2);
+$lg-half: calc($lg / 2);
+$xl-half: calc($xl / 2);
